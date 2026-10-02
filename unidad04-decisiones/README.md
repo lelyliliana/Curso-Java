@@ -1,6 +1,10 @@
-# Unidad 04 — Decisiones
+# Unidad 04 — Decisiones en Java
 
-## if / else
+## Qué aprenderás
+Traducir decisiones algorítmicas a Java usando if/else y switch, cuidando límites y comparaciones.
+
+# 1. if/else
+
 ```java
 if (edad >= 18) {
     System.out.println("Mayor de edad");
@@ -9,33 +13,115 @@ if (edad >= 18) {
 }
 ```
 
-## Condiciones compuestas
+La lógica ya la conoces de Algoritmos; ahora observa sintaxis:
+- condición entre paréntesis;
+- bloques con llaves;
+- expresión boolean.
+
+# 2. Condiciones
+
 ```java
-if (nota >= 0 && nota <= 5) {
-    // rango válido
+if (nota >= 0 && nota <= 5) { ... }
+```
+
+`&&` = Y, `||` = O, `!` = NO.
+
+# 3. Límites
+
+```java
+edad > 18
+```
+excluye 18.
+
+Prueba siempre valores inmediatamente antes, en y después de la frontera.
+
+# 4. Cadenas: equals
+
+No uses:
+```java
+if (opcion == "si")
+```
+para comparar contenido de String.
+
+Usa:
+```java
+if ("si".equals(opcion))
+```
+
+`==` con referencias pregunta por identidad de referencia; `equals` puede definir igualdad de contenido.
+
+# 5. else-if
+
+```java
+if (nota >= 4.5) {
+    ...
+} else if (nota >= 3.0) {
+    ...
+} else {
+    ...
 }
 ```
 
-## switch
-Útil cuando una expresión se compara con casos discretos.
+El orden sigue importando.
+
+# 6. switch tradicional/con expresión
+
+Java moderno permite:
 
 ```java
 String nombreDia = switch (dia) {
     case 1 -> "Lunes";
     case 2 -> "Martes";
+    case 3 -> "Miércoles";
     default -> "Otro";
 };
 ```
 
-## Orden
-Las condiciones más generales pueden ocultar condiciones específicas.
+Aquí switch **produce un valor**.
 
-## Ejercicios
-1. Par/impar.
-2. Mayor de tres.
-3. Nota por rangos.
-4. Año bisiesto.
-5. Menú con switch.
+# 7. Cuándo switch
 
-## Reto
-Construye una tarifa por rangos y crea pruebas para cada frontera.
+Útil cuando una expresión se compara contra casos discretos.
+
+Rangos como `nota >= 4.5` suelen expresarse naturalmente con if/else.
+
+# 8. Práctica guiada
+
+Construye menú:
+1. Crear
+2. Consultar
+3. Salir
+
+Valida cualquier otro número con default.
+
+Después construye clasificación por rangos con if.
+
+Compara por qué son problemas diferentes.
+
+# 9. Errores frecuentes
+- String con ==.
+- límites incorrectos.
+- condición general antes de específica.
+- switch para rangos artificiales.
+- olvidar default/caso no contemplado cuando el dominio lo necesita.
+
+# 10. Ejercicios
+Par/impar, mayor, notas, bisiesto, menú y comparación de cadenas.
+
+# 11. Reto
+Tarifa por rangos con pruebas en cada frontera y tabla entrada→resultado esperado.
+
+# 12. Autoevaluación
+1. ¿&&/||?
+2. ¿String con ==?
+3. ¿Por qué orden de else-if?
+4. ¿switch puede devolver valor?
+5. ¿Cuándo preferir if?
+
+# 13. Checklist
+- [ ] Escribo condiciones.
+- [ ] Comparo String correctamente.
+- [ ] Pruebo límites.
+- [ ] Elijo if/switch.
+
+Continúa con ciclos.
