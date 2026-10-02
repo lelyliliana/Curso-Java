@@ -1,6 +1,6 @@
 # Versión 1.0
 
-Estado: **completa y disponible**.
+Estado: **completa, autodidacta y disponible**.
 
 ## Alcance
 
@@ -34,3 +34,7 @@ El curso cubre el recorrido definido desde los fundamentos del lenguaje hasta pr
 Los frameworks especializados permanecen fuera del alcance de este curso.
 
 Las correcciones posteriores se consideran mantenimiento de la versión publicada.
+
+## Experiencia de aprendizaje
+
+El curso puede recorrerse de forma autónoma desde la instalación y fundamentos del lenguaje hasta POO, biblioteca estándar, concurrencia, herramientas, pruebas y un proyecto reproducible. Las unidades priorizan explicación, práctica, diagnóstico, ejercicios, retos y decisiones técnicas justificadas.
