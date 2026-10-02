@@ -1,5 +1,7 @@
 # Curso de Java desde cero
 
+**Versión 1.0**
+
 Curso abierto para aprender **Java de forma progresiva**, desde la sintaxis fundamental y la programación orientada a objetos hasta colecciones, programación funcional, concurrencia, redes, pruebas y construcción de proyectos con Maven.
 
 Este curso está diseñado como un recurso independiente dentro de Aprende con Leli.
