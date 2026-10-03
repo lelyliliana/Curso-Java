@@ -1,5 +1,7 @@
 # Unidad 28 — Buenas prácticas y refactorización
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Mejorar diseño preservando comportamiento y distinguir principios útiles de reglas rígidas.
 
@@ -161,3 +163,12 @@ Refactoriza código en commits/pasos pequeños y explica qué problema de manten
 - [ ] Evito abstracción prematura.
 
 Continúa con taller.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 27 — Diagnóstico, logging, depuración y configuración](../unidad27-diagnostico/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 29 — Taller integrador de Java](../unidad29-taller/README.md)

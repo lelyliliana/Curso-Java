@@ -1,5 +1,7 @@
 # Unidad 15 — Archivos y NIO
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Trabajar con Path/Files, elegir lectura completa o streaming, manejar codificación y recursos.
 
@@ -136,3 +138,12 @@ Importador de registros con válidas/inválidas y resumen, sin cargar todo si el
 - [ ] Conservo diagnóstico.
 
 Continúa con colecciones.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 14 — Fechas y tiempo con java.time](../unidad14-fechas-tiempo/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 16 — Colecciones](../unidad16-colecciones/README.md)

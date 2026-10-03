@@ -1,5 +1,7 @@
 # Unidad 01 — JDK, JVM y bytecode
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Comprender las piezas principales de la plataforma Java y localizar en qué etapa ocurre un problema.
 
@@ -112,3 +114,12 @@ Explica el ciclo Java a alguien que viene de un lenguaje ejecutado de forma dife
 - [ ] Comprendo versión/entorno.
 
 Continúa con datos y operadores.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 00 — Entorno, JDK y primer programa](../unidad00-entorno/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 02 — Variables, tipos y operadores](../unidad02-datos-operadores/README.md)

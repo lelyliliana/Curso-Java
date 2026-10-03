@@ -1,5 +1,7 @@
 # Unidad 17 — Genéricos
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Reutilizar código conservando seguridad de tipos y comprender invariancia, wildcards y PECS.
 
@@ -139,3 +141,12 @@ Crea utilidades genéricas para copiar/filtrar colecciones manteniendo seguridad
 - [ ] Evito raw types.
 
 Continúa con lambdas.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 16 — Colecciones](../unidad16-colecciones/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 18 — Lambdas e interfaces funcionales](../unidad18-lambdas/README.md)

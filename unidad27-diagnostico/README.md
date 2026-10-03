@@ -1,5 +1,7 @@
 # Unidad 27 — Diagnóstico, logging, depuración y configuración
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Investigar fallos con hipótesis/evidencia, usar debugger/logs y separar configuración del código.
 
@@ -141,3 +143,12 @@ Diagnostica un fallo y entrega bitácora hipótesis→evidencia→corrección→
 - [ ] Creo regresión.
 
 Continúa con buenas prácticas.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 26 — Mockito y pruebas con dependencias](../unidad26-mockito/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 28 — Buenas prácticas y refactorización](../unidad28-buenas-practicas/README.md)

@@ -1,5 +1,7 @@
 # Unidad 22 — Executors, Future y concurrencia de tareas
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Separar tareas de hilos, utilizar pools/Future y razonar sobre cancelación, bloqueos y rendimiento.
 
@@ -136,3 +138,12 @@ Compara ejecución secuencial y concurrente bajo condiciones documentadas y expl
 - [ ] Distingo platform/virtual threads a nivel conceptual.
 
 Continúa con sockets.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 21 — Threads, estado compartido y condiciones de carrera](../unidad21-threads/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 23 — Redes con sockets TCP](../unidad23-redes/README.md)

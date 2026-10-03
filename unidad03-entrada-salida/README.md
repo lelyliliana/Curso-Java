@@ -1,5 +1,7 @@
 # Unidad 03 — Entrada, salida y conversiones
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Leer consola con Scanner, convertir texto, formatear salida y diagnosticar entradas inválidas.
 
@@ -142,3 +144,12 @@ Construye factura de consola y documenta entradas que pueden fallar y cómo debe
 - [ ] Formateo salida.
 
 Continúa con decisiones.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 02 — Variables, tipos y operadores](../unidad02-datos-operadores/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 04 — Decisiones en Java](../unidad04-decisiones/README.md)

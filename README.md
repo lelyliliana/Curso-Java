@@ -1,5 +1,11 @@
 # Curso de Java desde cero
 
+**[Comenzar el curso: Unidad 00 — Entorno, JDK y primer programa](unidad00-entorno/README.md)**
+
+Puedes leer las lecciones aquí sin conocer GitHub. Al terminar cada unidad, usa **Siguiente unidad** para avanzar; **Unidad anterior** y **Volver al índice** te permiten regresar.
+
+[Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 **Versión 1.0**
 
 Curso abierto para aprender **Java de forma progresiva**, desde la sintaxis fundamental y la programación orientada a objetos hasta colecciones, programación funcional, concurrencia, redes, pruebas y construcción de proyectos con Maven.

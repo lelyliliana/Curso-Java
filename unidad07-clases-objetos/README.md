@@ -1,5 +1,7 @@
 # Unidad 07 — Clases y objetos
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Pasar de métodos sueltos a objetos con estado y comportamiento, distinguir instancia/clase y comenzar a modelar responsabilidades.
 
@@ -167,3 +169,12 @@ Diseña una clase Producto sin setters automáticos. Expón únicamente operacio
 - [ ] Diseño responsabilidades.
 
 Continúa con constructores y encapsulamiento.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 06 — Métodos y modularización](../unidad06-metodos/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 08 — Constructores, encapsulamiento e invariantes](../unidad08-encapsulamiento/README.md)

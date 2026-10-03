@@ -1,5 +1,7 @@
 # Unidad 05 — Ciclos en Java
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Implementar repeticiones con for, while, do-while y for-each y reconocer errores de límites e infinitos.
 
@@ -151,3 +153,12 @@ Estadísticas sin almacenar todos los datos. Documenta estado que necesitas mant
 - [ ] Trazo iteraciones.
 
 Continúa con métodos.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 04 — Decisiones en Java](../unidad04-decisiones/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 06 — Métodos y modularización](../unidad06-metodos/README.md)

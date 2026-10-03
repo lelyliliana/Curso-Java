@@ -1,5 +1,7 @@
 # Unidad 12 — Excepciones y manejo de errores
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Distinguir errores de dominio/programación/entorno, propagar o manejar excepciones y cerrar recursos correctamente.
 
@@ -171,3 +173,12 @@ Importador que continúa ante líneas inválidas y entrega resumen reproducible 
 - [ ] Distingo excepción de flujo normal.
 
 Continúa con cadenas y biblioteca estándar.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 11 — Enumeraciones y records](../unidad11-enum-records/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 13 — String y procesamiento de texto](../unidad13-cadenas/README.md)

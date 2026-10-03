@@ -1,5 +1,7 @@
 # Unidad 04 — Decisiones en Java
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Traducir decisiones algorítmicas a Java usando if/else y switch, cuidando límites y comparaciones.
 
@@ -125,3 +127,12 @@ Tarifa por rangos con pruebas en cada frontera y tabla entrada→resultado esper
 - [ ] Elijo if/switch.
 
 Continúa con ciclos.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 03 — Entrada, salida y conversiones](../unidad03-entrada-salida/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 05 — Ciclos en Java](../unidad05-ciclos/README.md)

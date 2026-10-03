@@ -1,5 +1,7 @@
 # Unidad 11 — Enumeraciones y records
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Representar dominios cerrados con enum y portadores de datos concisos con record, comprendiendo sus límites de mutabilidad.
 
@@ -148,3 +150,12 @@ ResultadoMedicion record + EstadoSensor enum. Protege una colección mutable si 
 - [ ] Comprendo mutabilidad superficial.
 
 Continúa con excepciones.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 10 — Polimorfismo, interfaces y clases abstractas](../unidad10-polimorfismo-interfaces/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 12 — Excepciones y manejo de errores](../unidad12-excepciones/README.md)

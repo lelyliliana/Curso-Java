@@ -1,5 +1,7 @@
 # Unidad 06 — Métodos y modularización
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Crear métodos con contratos claros, comprender parámetros/retornos, sobrecarga y el paso por valor de Java.
 
@@ -151,3 +153,12 @@ Calculadora modular. main coordina; métodos calculan/validan. Prueba cada méto
 - [ ] Mantengo responsabilidades claras.
 
 Continúa con clases y objetos.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 05 — Ciclos en Java](../unidad05-ciclos/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 07 — Clases y objetos](../unidad07-clases-objetos/README.md)

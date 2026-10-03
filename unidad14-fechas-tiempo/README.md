@@ -1,5 +1,7 @@
 # Unidad 14 — Fechas y tiempo con java.time
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Elegir entre LocalDate, LocalDateTime, Instant y ZonedDateTime, formatear y calcular intervalos sin confundir fecha local con instante global.
 
@@ -134,3 +136,12 @@ Diseña agenda que distinga eventos locales e instantes globales y documenta dec
 - [ ] Distingo zona/offset.
 
 Continúa con archivos.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 13 — String y procesamiento de texto](../unidad13-cadenas/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 15 — Archivos y NIO](../unidad15-archivos-nio/README.md)

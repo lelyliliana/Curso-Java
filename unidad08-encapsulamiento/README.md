@@ -1,5 +1,7 @@
 # Unidad 08 — Constructores, encapsulamiento e invariantes
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Construir objetos válidos desde el inicio y controlar cambios de estado mediante operaciones del dominio.
 
@@ -133,3 +135,12 @@ Diseña Cuenta cuyo estado inválido no pueda alcanzarse mediante su API públic
 - [ ] Controlo mutabilidad.
 
 Continúa con herencia/composición.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 07 — Clases y objetos](../unidad07-clases-objetos/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 09 — Herencia y composición](../unidad09-herencia-composicion/README.md)

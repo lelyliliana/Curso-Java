@@ -1,5 +1,7 @@
 # Unidad 18 — Lambdas e interfaces funcionales
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Tratar comportamiento como valor mediante interfaces funcionales, lambdas y referencias a métodos.
 
@@ -128,3 +130,12 @@ Refactoriza reglas hardcodeadas para recibir comportamiento y prueba varias impl
 - [ ] Parametrizo comportamiento.
 
 Continúa con Streams.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 17 — Genéricos](../unidad17-genericos/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 19 — Stream API](../unidad19-streams/README.md)

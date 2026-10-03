@@ -1,5 +1,7 @@
 # Unidad 26 — Mockito y pruebas con dependencias
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Aislar colaboradores cuando aporta valor, configurar respuestas y evitar pruebas acopladas a detalles internos.
 
@@ -118,3 +120,12 @@ Prueba servicio con repositorio y notificador. Justifica qué es mock y qué obj
 - [ ] Distingo unit/integración.
 
 Continúa con diagnóstico.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 25 — Pruebas con JUnit](../unidad25-junit/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 27 — Diagnóstico, logging, depuración y configuración](../unidad27-diagnostico/README.md)

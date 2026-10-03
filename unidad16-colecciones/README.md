@@ -1,5 +1,7 @@
 # Unidad 16 — Colecciones
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Elegir interfaces y implementaciones según operaciones, comprender igualdad/hash y utilizar List, Set, Map, Queue y Deque.
 
@@ -151,3 +153,12 @@ Analiza registros usando al menos tres abstracciones y documenta por qué cada u
 - [ ] Justifico estructura.
 
 Continúa con genéricos.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 15 — Archivos y NIO](../unidad15-archivos-nio/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 17 — Genéricos](../unidad17-genericos/README.md)

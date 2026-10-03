@@ -1,5 +1,7 @@
 # Unidad 29 — Taller integrador de Java
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Propósito
 
 Resolver problemas sin que el enunciado diga “usa Stream”, “usa interface” o “usa HashMap”.
@@ -128,3 +130,12 @@ Si necesitas que el enunciado te diga la característica de Java, vuelve a la un
 - [ ] Justificación técnica.
 
 Continúa con el proyecto final.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 28 — Buenas prácticas y refactorización](../unidad28-buenas-practicas/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 30 — Proyecto final](../unidad30-proyecto-final/README.md)

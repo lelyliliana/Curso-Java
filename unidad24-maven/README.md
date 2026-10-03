@@ -1,5 +1,7 @@
 # Unidad 24 — Maven y estructura de proyectos
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Convertir código suelto en un proyecto reproducible, comprender pom.xml, dependencias y ciclo de construcción.
 
@@ -145,3 +147,12 @@ Convierte un proyecto previo a Maven, añade JUnit y documenta un único comando
 - [ ] Mantengo reproducibilidad.
 
 Continúa con JUnit.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 23 — Redes con sockets TCP](../unidad23-redes/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 25 — Pruebas con JUnit](../unidad25-junit/README.md)

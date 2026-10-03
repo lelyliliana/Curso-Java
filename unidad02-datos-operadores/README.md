@@ -1,5 +1,7 @@
 # Unidad 02 — Variables, tipos y operadores
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Representar datos en Java, distinguir primitivos/referencias, comprender división, conversiones y expresiones.
 
@@ -173,3 +175,12 @@ Calculadora de costo de viaje. Documenta por qué cada dato es int, long, double
 - [ ] Uso expresiones claras.
 
 Continúa con entrada/salida.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 01 — JDK, JVM y bytecode](../unidad01-plataforma-java/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 03 — Entrada, salida y conversiones](../unidad03-entrada-salida/README.md)

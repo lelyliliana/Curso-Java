@@ -1,5 +1,7 @@
 # Unidad 09 — Herencia y composición
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Modelar relaciones es-un/tiene-un y elegir composición o herencia por significado, no por ahorro de código.
 
@@ -129,3 +131,12 @@ Refactoriza un diseño basado en herencia innecesaria hacia composición y expli
 - [ ] Preservo contratos.
 
 Continúa con polimorfismo.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 08 — Constructores, encapsulamiento e invariantes](../unidad08-encapsulamiento/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 10 — Polimorfismo, interfaces y clases abstractas](../unidad10-polimorfismo-interfaces/README.md)

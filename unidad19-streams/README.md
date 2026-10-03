@@ -1,5 +1,7 @@
 # Unidad 19 — Stream API
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Construir pipelines declarativos, distinguir operaciones intermedias/terminales y reconocer cuándo un ciclo es más claro.
 
@@ -150,3 +152,12 @@ Reporte de ventas con filtrado, agrupación, suma y orden. Explica por qué Stre
 - [ ] No fuerzo Streams.
 
 Continúa con Optional.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 18 — Lambdas e interfaces funcionales](../unidad18-lambdas/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 20 — Optional y ausencia de valores](../unidad20-optional/README.md)

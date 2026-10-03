@@ -1,5 +1,7 @@
 # Unidad 21 — Threads, estado compartido y condiciones de carrera
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Crear tareas concurrentes, esperar su finalización y observar por qué el estado mutable compartido necesita coordinación.
 
@@ -128,3 +130,12 @@ Demuestra una carrera y corrígela de dos formas. Explica qué propiedad aporta 
 - [ ] No ignoro interrupción.
 
 Continúa con Executors.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 20 — Optional y ausencia de valores](../unidad20-optional/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 22 — Executors, Future y concurrencia de tareas](../unidad22-concurrencia/README.md)

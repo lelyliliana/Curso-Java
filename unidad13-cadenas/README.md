@@ -1,5 +1,7 @@
 # Unidad 13 — String y procesamiento de texto
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Comprender inmutabilidad, igualdad, operaciones de texto y cuándo usar StringBuilder.
 
@@ -154,3 +156,12 @@ Analizador de texto con reglas de normalización documentadas.
 - [ ] Documento normalización.
 
 Continúa con fechas.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 12 — Excepciones y manejo de errores](../unidad12-excepciones/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 14 — Fechas y tiempo con java.time](../unidad14-fechas-tiempo/README.md)

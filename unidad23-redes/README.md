@@ -1,5 +1,7 @@
 # Unidad 23 — Redes con sockets TCP
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Construir un cliente/servidor local, comprender que TCP es un flujo de bytes y diseñar un protocolo de aplicación mínimo.
 
@@ -145,3 +147,12 @@ Cliente/servidor local con protocolo de líneas, mensajes inválidos y desconexi
 - [ ] Mantengo práctica local.
 
 Continúa con Maven.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 22 — Executors, Future y concurrencia de tareas](../unidad22-concurrencia/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 24 — Maven y estructura de proyectos](../unidad24-maven/README.md)

@@ -1,5 +1,7 @@
 # Unidad 20 — Optional y ausencia de valores
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Expresar resultados opcionales, transformar valores presentes y evitar usos mecánicos de Optional.
 
@@ -142,3 +144,12 @@ Diseña API de repositorio que distinga correctamente “no encontrado” de “
 - [ ] No lo uso mecánicamente.
 
 Continúa con concurrencia.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 19 — Stream API](../unidad19-streams/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 21 — Threads, estado compartido y condiciones de carrera](../unidad21-threads/README.md)

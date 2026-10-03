@@ -1,5 +1,7 @@
 # Unidad 25 — Pruebas con JUnit
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Diseñar pruebas unitarias legibles, cubrir fronteras/excepciones y distinguir calidad de pruebas de cantidad.
 
@@ -136,3 +138,12 @@ Suite de una clase de dominio con invariantes. Explica por qué cada caso existe
 - [ ] No persigo métricas vacías.
 
 Continúa con Mockito.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 24 — Maven y estructura de proyectos](../unidad24-maven/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 26 — Mockito y pruebas con dependencias](../unidad26-mockito/README.md)

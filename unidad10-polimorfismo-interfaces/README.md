@@ -1,5 +1,7 @@
 # Unidad 10 — Polimorfismo, interfaces y clases abstractas
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Programar contra contratos, sustituir implementaciones y elegir entre interface, clase abstracta y clase concreta.
 
@@ -138,3 +140,12 @@ Dos notificadores detrás de una interface y una clase consumidora que no conozc
 - [ ] Reduzco acoplamiento.
 
 Continúa con enum y records.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 09 — Herencia y composición](../unidad09-herencia-composicion/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 11 — Enumeraciones y records](../unidad11-enum-records/README.md)

@@ -1,5 +1,7 @@
 # Unidad 30 — Proyecto final
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Propósito
 
 Construir una aplicación Java reproducible que demuestre dominio del lenguaje, POO, biblioteca estándar, pruebas y diagnóstico.
@@ -173,3 +175,13 @@ Pregunta:
 # Cierre
 
 > Java profesional no consiste en utilizar todas las APIs del lenguaje, sino en construir software que pueda comprenderse, probarse, diagnosticarse y mantenerse.
+
+
+---
+
+## Continuar el curso
+
+- **Unidad anterior:** [Unidad 29 — Taller integrador de Java](../unidad29-taller/README.md)
+- **Volver al índice:** [Todas las unidades](../README.md)
+
+Llegaste a la última unidad. Revisa tu proyecto y la lista de comprobación antes de dar por terminado el curso.

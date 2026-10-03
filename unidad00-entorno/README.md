@@ -1,5 +1,7 @@
 # Unidad 00 — Entorno, JDK y primer programa
 
+[Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
+
 ## Qué aprenderás
 Preparar Java 21, distinguir compilación/ejecución y diagnosticar los primeros errores desde terminal.
 
@@ -166,3 +168,11 @@ Crea un programa que presente un perfil tecnológico ficticio. Compílalo y ejec
 - [ ] Comprendo el flujo.
 
 Continúa con la plataforma Java.
+
+
+---
+
+## Continuar el curso
+
+- **Volver al índice:** [Todas las unidades](../README.md)
+- **Siguiente unidad:** [Unidad 01 — JDK, JVM y bytecode](../unidad01-plataforma-java/README.md)
