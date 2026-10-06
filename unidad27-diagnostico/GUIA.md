@@ -22,3 +22,4 @@ Ejecuta el caso original y regresiones.
 
 ## Stack trace
 Lee desde la excepción y localiza la primera línea de tu código relevante. No empieces cambiando dependencias al azar.
+

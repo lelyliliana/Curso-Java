@@ -26,3 +26,4 @@ public class Notificaciones {
         avisar(new NotificadorSimulado(), "Prueba");
     }
 }
+

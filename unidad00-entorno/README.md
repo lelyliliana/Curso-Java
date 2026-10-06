@@ -1,4 +1,4 @@
-# Unidad 00 — Entorno, JDK y primer programa
+# Unidad 00: Entorno, JDK y primer programa
 
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
 
@@ -8,7 +8,7 @@ Preparar Java 21, distinguir compilación/ejecución y diagnosticar los primeros
 ## Antes de empezar
 Se recomienda haber estudiado fundamentos de algoritmos. No necesitas experiencia previa con Java.
 
-# 1. Comprobar el JDK
+## 1. Comprobar el JDK
 
 En terminal:
 
@@ -24,7 +24,7 @@ Necesitamos ambas herramientas.
 
 Si `java` existe y `javac` no, probablemente no estás usando un JDK completo o el PATH no apunta correctamente.
 
-# 2. Primer archivo
+## 2. Primer archivo
 
 Crea `HolaJava.java`:
 
@@ -40,7 +40,7 @@ Java distingue mayúsculas/minúsculas.
 
 Si la clase pública se llama `HolaJava`, el archivo debe llamarse `HolaJava.java`.
 
-# 3. Compilar
+## 3. Compilar
 
 ```bash
 javac HolaJava.java
@@ -54,7 +54,7 @@ HolaJava.class
 
 No es el código fuente: contiene bytecode para la JVM.
 
-# 4. Ejecutar
+## 4. Ejecutar
 
 ```bash
 java HolaJava
@@ -68,7 +68,7 @@ Salida:
 Hola, Java
 ```
 
-# 5. Flujo
+## 5. Flujo
 
 ```text
 HolaJava.java
@@ -78,7 +78,7 @@ HolaJava.class
 programa ejecutándose
 ```
 
-# 6. main
+## 6. main
 
 ```java
 public static void main(String[] args)
@@ -90,7 +90,7 @@ Por ahora reconoce su forma. `public`, `static`, métodos y arrays se comprender
 
 No necesitas memorizar palabras que aún no entiendes.
 
-# 7. Primer diagnóstico
+## 7. Primer diagnóstico
 
 ## Error de compilación
 
@@ -114,7 +114,7 @@ Corrige y recompila.
 
 Si guardas la clase pública `HolaJava` en `Prueba.java`, javac te indicará la incompatibilidad.
 
-# 8. Terminal antes del IDE
+## 8. Terminal antes del IDE
 
 Un IDE ayuda muchísimo, pero aprender primero:
 
@@ -126,7 +126,7 @@ evita que Java parezca “magia del botón Run”.
 
 Después podrás usar VS Code, IntelliJ u otro entorno comprendiendo qué automatiza.
 
-# 9. Práctica guiada
+## 9. Práctica guiada
 
 1. Comprueba versiones.
 2. Crea HolaJava.java.
@@ -137,30 +137,30 @@ Después podrás usar VS Code, IntelliJ u otro entorno comprendiendo qué automa
 7. Provoca un error.
 8. Corrígelo.
 
-# 10. Errores frecuentes
+## 10. Errores frecuentes
 - Ejecutar desde carpeta equivocada.
 - Nombre archivo/clase diferente.
 - `javac` no disponible.
 - Intentar ejecutar `.java` con un flujo que no corresponde a la práctica.
 - Copiar comandos sin mirar el directorio actual.
 
-# 11. Ejercicios
+## 11. Ejercicios
 1. Tres líneas.
 2. Presentación personal ficticia.
 3. Texto con números.
 4. Provoca dos errores de compilación y documenta qué significan.
 
-# 12. Reto
+## 12. Reto
 Crea un programa que presente un perfil tecnológico ficticio. Compílalo y ejecútalo únicamente desde terminal.
 
-# 13. Autoevaluación
+## 13. Autoevaluación
 1. ¿Qué hace javac?
 2. ¿Qué archivo genera?
 3. ¿Qué hace java?
 4. ¿Por qué importa el nombre del archivo?
 5. ¿Qué diferencia hay entre código fuente y bytecode?
 
-# 14. Checklist
+## 14. Checklist
 - [ ] Tengo JDK.
 - [ ] Compilo.
 - [ ] Ejecuto.
@@ -170,9 +170,62 @@ Crea un programa que presente un perfil tecnológico ficticio. Compílalo y ejec
 Continúa con la plataforma Java.
 
 
+## Laboratorio completo: observar, explicar y modificar
+
+El archivo contiene una clase pública y un método de entrada. El compilador no imprime el saludo: genera bytecode. El lanzador inicia una JVM que ejecuta main. Un archivo puede compilar y aun así fallar al ejecutarse por una excepción o una dependencia ausente.
+
+### Paso 1. Ubica el archivo
+
+Abre una terminal en `unidad00-entorno/laboratorio`. El programa completo está en [Laboratorio.java](laboratorio/Laboratorio.java). Cada unidad tiene su propia carpeta: estos archivos usan el mismo nombre y se compilan **por separado**.
+
+### Paso 2. Compila
+
+```text
+javac -encoding UTF-8 --release 21 Laboratorio.java
+```
+
+`-encoding` define cómo se lee el código fuente y `--release` fija lenguaje, API y formato de clase compatibles con Java 21. Son decisiones diferentes. Si el comando falla, corrige el primer error relevante antes de ejecutar un bytecode antiguo.
+
+### Paso 3. Ejecuta
+
+```text
+java Laboratorio
+```
+
+Compara la salida con el resultado previsto. Los valores se eligieron para hacer visible el comportamiento de esta unidad.
+
+```text
+Hola, Java
+Argumentos: 0
+```
+
+### Paso 4. Recorre la lógica
+
+Identifica clase, archivo, llaves y punto y coma. Compila sin ejecutar. Busca Laboratorio.class. Ejecuta usando el nombre de la clase. Añade un argumento y explica por qué cambia args.length.
+
+### Paso 5. Lee el código completo
+
+```java
+public final class Laboratorio {
+    public static void main(String[] args) throws Exception {
+        System.out.println("Hola, Java");
+        System.out.println("Argumentos: " + args.length);
+    }
+
+    
+}
+```
+
+### Paso 6. Comprueba y extiende
+
+Sin argumentos: 0. Con Ana Java: 2. Falta un punto y coma: error de compilación; no esperes que cambie un .class antiguo.
+
+Continúa con [la práctica](PRACTICA.md). Escribe primero tus predicciones y consulta [las soluciones razonadas](SOLUCIONES.md) después de intentarla.
+
 ---
 
 ## Continuar el curso
 
 - **Volver al índice:** [Todas las unidades](../README.md)
-- **Siguiente unidad:** [Unidad 01 — JDK, JVM y bytecode](../unidad01-plataforma-java/README.md)
+- **Siguiente unidad:** [Unidad 01: JDK, JVM y bytecode](../unidad01-plataforma-java/README.md)
+

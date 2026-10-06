@@ -1,4 +1,4 @@
-# Ejercicios — Colecciones
+# Ejercicios: Colecciones
 1. List para secuencia.
 2. Set para únicos.
 3. Map para frecuencias.
@@ -7,3 +7,4 @@
 
 ## Reto
 Resuelve un mismo problema con dos estructuras y compara claridad y operaciones.
+

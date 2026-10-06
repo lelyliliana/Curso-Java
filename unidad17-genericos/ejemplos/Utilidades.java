@@ -13,4 +13,10 @@ public class Utilidades {
         destino.add(10);
         destino.add(20);
     }
+    public static void main(String[] args) {
+        System.out.println(sumarNumeros(List.of(1, 2, 3)));
+        var destino = new java.util.ArrayList<Number>();
+        agregarEnteros(destino);
+        System.out.println(destino);
+    }
 }

@@ -1,4 +1,4 @@
-# Unidad 30 — Proyecto final
+# Unidad 30: Proyecto final
 
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
 
@@ -8,7 +8,7 @@ Construir una aplicación Java reproducible que demuestre dominio del lenguaje, 
 
 No es obligatorio utilizar todas las características del curso.
 
-# Etapa 1 — Problema
+## Etapa 1: Problema
 
 Elige un dominio ficticio o con datos no sensibles:
 - inventario;
@@ -20,7 +20,7 @@ Elige un dominio ficticio o con datos no sensibles:
 
 Define usuario, necesidad, alcance y exclusiones.
 
-# Etapa 2 — Casos de uso
+## Etapa 2: Casos de uso
 
 Escribe al menos cinco acciones:
 ```text
@@ -33,7 +33,7 @@ generar reporte
 
 Incluye errores esperados.
 
-# Etapa 3 — Modelo de dominio
+## Etapa 3: Modelo de dominio
 
 Diseña clases/records/enums.
 
@@ -45,7 +45,7 @@ Para cada tipo:
 
 No empieces con getters/setters.
 
-# Etapa 4 — Arquitectura pequeña
+## Etapa 4: Arquitectura pequeña
 
 Separa cuando aporte:
 ```text
@@ -60,13 +60,13 @@ repositorio/archivo
 
 No necesitas crear capas vacías solo para imitar arquitecturas empresariales.
 
-# Etapa 5 — Colecciones
+## Etapa 5: Colecciones
 
 Elige List/Set/Map/Queue según operaciones.
 
 Documenta por qué.
 
-# Etapa 6 — Persistencia o intercambio
+## Etapa 6: Persistencia o intercambio
 
 Implementa al menos una:
 - archivos con NIO;
@@ -75,7 +75,7 @@ Implementa al menos una:
 
 No necesitas base de datos en este curso.
 
-# Etapa 7 — Errores
+## Etapa 7: Errores
 
 Define:
 - entradas inválidas;
@@ -85,19 +85,19 @@ Define:
 
 Decide cuándo excepción, Optional o resultado vacío.
 
-# Etapa 8 — Funcional moderno
+## Etapa 8: Funcional moderno
 
 Usa lambdas/Streams **solo donde mejoren claridad**.
 
 Incluye al menos una comparación breve con alternativa imperativa si utilizas un pipeline importante.
 
-# Etapa 9 — Concurrencia opcional por necesidad
+## Etapa 9: Concurrencia opcional por necesidad
 
 Threads/Executor/virtual threads solo si el problema contiene tareas independientes o I/O concurrente que lo justifique.
 
 No se otorgan puntos por añadir concurrencia artificial.
 
-# Etapa 10 — Maven
+## Etapa 10: Maven
 
 Proyecto debe ejecutar:
 
@@ -108,7 +108,7 @@ mvn package
 
 sin rutas personales ni dependencias manuales.
 
-# Etapa 11 — Pruebas
+## Etapa 11: Pruebas
 
 Incluye JUnit para:
 - invariantes;
@@ -118,7 +118,7 @@ Incluye JUnit para:
 
 Mockito solo cuando exista una dependencia que realmente convenga sustituir.
 
-# Etapa 12 — Diagnóstico
+## Etapa 12: Diagnóstico
 
 Configura mensajes/logging apropiados al alcance.
 
@@ -126,7 +126,7 @@ No expongas secretos/datos sensibles.
 
 Conserva causas de errores.
 
-# Etapa 13 — Calidad
+## Etapa 13: Calidad
 
 Antes de refactorizar, tests verdes.
 
@@ -137,7 +137,7 @@ Revisa:
 - acoplamiento;
 - métodos complejos.
 
-# Etapa 14 — README reproducible
+## Etapa 14: README reproducible
 
 Debe indicar:
 1. requisitos;
@@ -148,7 +148,7 @@ Debe indicar:
 6. decisiones principales;
 7. limitaciones.
 
-# Etapa 15 — Revisión
+## Etapa 15: Revisión
 
 Usa:
 - `PLANTILLA_PROYECTO.md`;
@@ -163,7 +163,7 @@ Pregunta:
 - ¿hay secretos/rutas personales?
 - ¿puedo explicar cada característica usada?
 
-# Entregables
+## Entregables
 
 - código Maven;
 - README;
@@ -172,16 +172,25 @@ Pregunta:
 - documentación de diseño;
 - evidencia de ejecución/pruebas.
 
-# Cierre
+## Cierre
 
 > Java profesional no consiste en utilizar todas las APIs del lenguaje, sino en construir software que pueda comprenderse, probarse, diagnosticarse y mantenerse.
 
+
+## Referencia completa
+
+[Guía del inventario ejecutable](../docs/PROYECTO_INVENTARIO.md): contratos, modelo, formato versionado, ejecución paso a paso, pruebas y límites. El código se encuentra en la raíz del curso, no en un proyecto vacío dentro de esta carpeta.
+
+## Práctica reproducible
+
+Consulta [PRACTICA.md](PRACTICA.md) y contrasta tu resultado con [SOLUCIONES.md](SOLUCIONES.md).
 
 ---
 
 ## Continuar el curso
 
-- **Unidad anterior:** [Unidad 29 — Taller integrador de Java](../unidad29-taller/README.md)
+- **Unidad anterior:** [Unidad 29: Taller integrador de Java](../unidad29-taller/README.md)
 - **Volver al índice:** [Todas las unidades](../README.md)
 
 Llegaste a la última unidad. Revisa tu proyecto y la lista de comprobación antes de dar por terminado el curso.
+

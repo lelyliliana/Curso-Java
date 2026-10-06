@@ -1,4 +1,4 @@
-# Ejercicios — Genéricos
+# Ejercicios: Genéricos
 1. Caja<T>.
 2. Método primero<T>.
 3. Máximo con restricción.
@@ -7,3 +7,4 @@
 
 ## Reto
 Diseña una API genérica y explica por qué cada wildcard permite o restringe operaciones.
+

@@ -1,4 +1,4 @@
-# Ejercicios — NIO
+# Ejercicios: NIO
 1. Crear directorio.
 2. Leer/escribir texto.
 3. Copiar archivo.
@@ -7,3 +7,4 @@
 
 ## Reto
 Genera reporte desde un archivo de entrada sin usar rutas absolutas personales.
+

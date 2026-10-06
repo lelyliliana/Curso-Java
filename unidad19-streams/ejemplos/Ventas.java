@@ -21,3 +21,4 @@ public class Ventas {
         System.out.println(totales);
     }
 }
+

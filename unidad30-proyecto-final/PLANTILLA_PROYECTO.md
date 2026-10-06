@@ -1,44 +1,30 @@
-# Plantilla — Proyecto final Java
+# Nombre de la aplicación
 
-## Problema
+## Problema y alcance
+Describe usuario, necesidad, cinco acciones y exclusiones.
 
-## Alcance
+## Requisitos y ejecución
+Indica JDK, Maven, directorio de trabajo y comandos exactos para compilar, probar y ejecutar. Incluye un flujo de entradas y resultados esperados.
 
-## Requisitos
+## Contratos
 
-## Modelo de dominio
-Clases, records, enums e interfaces.
+| Operación | Entrada y límites | Resultado | Ausencia/error | Estado posterior |
+|---|---|---|---|---|
+| Completa con tus reglas | | | | |
 
-## Invariantes
+## Modelo y decisiones
+Explica responsabilidades, identidad/igualdad, mutabilidad, colecciones y por qué existen los colaboradores.
 
-## Arquitectura
-```text
-entrada/interfaz → aplicación/servicios → dominio → infraestructura
-```
-Adapta el esquema al tamaño real; no añadas capas sin necesidad.
-
-## Colecciones
-
-## Persistencia/comunicación
-Si aplica.
-
-## Manejo de errores
-
-## Configuración
-
-## Concurrencia
-Solo si el problema la necesita.
+## Archivo y política de guardado
+Documenta formato, versión, codificación, ausencia, corrupción y límites de escritura. Explica qué ocurre ante un fallo.
 
 ## Pruebas
-### Dominio
-### Servicios
-### Integración cuando aplique
+Relaciona suite con riesgo. Incluye dominio, integración y fallo relevante. Registra resultados sin presentar cobertura como garantía total.
 
-## Diagnóstico/logging
-
-## Ejecución
-Comandos Maven.
+## Extensión
+Explica requisito nuevo, contrato, implementación y casos añadidos.
 
 ## Limitaciones
+Declara condiciones de uso y funciones que no se implementan.
 
-## Decisiones descartadas
+[Volver al proyecto](README.md)

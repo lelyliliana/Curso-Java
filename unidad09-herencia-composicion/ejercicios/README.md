@@ -1,4 +1,4 @@
-# Ejercicios — Herencia y composición
+# Ejercicios: Herencia y composición
 Clasifica y justifica:
 1. Perro/Animal.
 2. Automóvil/Motor.
@@ -8,3 +8,4 @@ Clasifica y justifica:
 
 ## Reto
 Toma una jerarquía artificial y rediseñala usando composición donde sea más apropiado.
+

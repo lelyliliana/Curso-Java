@@ -9,3 +9,4 @@ public class ConversionTiempo {
         System.out.printf("%d:%02d:%02d%n", horas, minutos, segundos);
     }
 }
+

@@ -1,4 +1,4 @@
-# Guía — Elegir concurrencia
+# Guía: Elegir concurrencia
 
 Antes de añadir hilos pregunta:
 - ¿las tareas son independientes?
@@ -18,3 +18,4 @@ Antes de añadir hilos pregunta:
 
 ## Regla
 La concurrencia añade estados posibles. Úsala cuando resuelva un problema real, no como decoración.
+

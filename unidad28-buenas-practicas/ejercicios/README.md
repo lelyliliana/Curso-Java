@@ -16,3 +16,4 @@ Busca y mejora:
 
 ## Reto
 Documenta un refactor antes/después explicando qué propiedad de diseño mejoró.
+

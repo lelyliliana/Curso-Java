@@ -1,4 +1,4 @@
-# Unidad 29 — Taller integrador de Java
+# Unidad 29: Taller integrador de Java
 
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
 
@@ -8,7 +8,7 @@ Resolver problemas sin que el enunciado diga “usa Stream”, “usa interface�
 
 Debes elegir la herramienta.
 
-# Método
+## Método
 
 Para cada problema:
 1. reformula;
@@ -23,7 +23,7 @@ Para cada problema:
 
 Consulta `PROBLEMAS.md`.
 
-# Nivel 1 — Dominio
+## Nivel 1: Dominio
 
 ## Catálogo
 Productos con código único, precio válido y stock.
@@ -34,7 +34,7 @@ Decide:
 - igualdad;
 - operaciones públicas.
 
-# Nivel 2 — Importación
+## Nivel 2: Importación
 
 ## Transacciones desde archivo
 Lee registros con líneas inválidas.
@@ -45,14 +45,14 @@ Decide:
 - estructura de resultado;
 - reporte.
 
-# Nivel 3 — Diseño desacoplado
+## Nivel 3: Diseño desacoplado
 
 ## Notificaciones
 El sistema debe enviar mensajes por dos mecanismos intercambiables.
 
 No se indica si debes usar herencia/interface/composición: justifica.
 
-# Nivel 4 — Procesamiento
+## Nivel 4: Procesamiento
 
 ## Estadísticas
 Procesa ventas mediante:
@@ -61,7 +61,7 @@ Procesa ventas mediante:
 
 Compara claridad y costo conceptual. No declares ganador por estilo.
 
-# Nivel 5 — Ausencia
+## Nivel 5: Ausencia
 
 ## Repositorio en memoria
 Búsquedas por id y búsquedas por criterio.
@@ -71,7 +71,7 @@ Decide cuándo:
 - colección vacía;
 - excepción.
 
-# Nivel 6 — Concurrencia
+## Nivel 6: Concurrencia
 
 ## Tareas independientes
 Procesa trabajos secuencial/concurrentemente.
@@ -80,7 +80,7 @@ Mide bajo condiciones documentadas.
 
 Incluye al menos un escenario donde añadir concurrencia no aporte.
 
-# Nivel 7 — Red local
+## Nivel 7: Red local
 
 ## Cliente/servidor
 Diseña protocolo textual:
@@ -91,14 +91,14 @@ Diseña protocolo textual:
 
 Solo localhost/red controlada.
 
-# Nivel 8 — Proyecto reproducible
+## Nivel 8: Proyecto reproducible
 
 Convierte una solución a Maven:
 - tests;
 - dependencias;
 - un comando de verificación.
 
-# Criterios
+## Criterios
 
 Una solución sólida:
 - preserva invariantes;
@@ -108,7 +108,7 @@ Una solución sólida:
 - no expone secretos;
 - puede ejecutarse desde README.
 
-# Autoevaluación
+## Autoevaluación
 
 1. ¿Puedo decidir List/Set/Map?
 2. ¿Puedo decidir interface/composición?
@@ -120,7 +120,7 @@ Una solución sólida:
 
 Si necesitas que el enunciado te diga la característica de Java, vuelve a la unidad correspondiente.
 
-# Checklist
+## Checklist
 
 - [ ] Modelo antes de código.
 - [ ] Contratos.
@@ -132,10 +132,19 @@ Si necesitas que el enunciado te diga la característica de Java, vuelve a la un
 Continúa con el proyecto final.
 
 
+## Referencia completa
+
+[Guía del inventario ejecutable](../docs/PROYECTO_INVENTARIO.md): contratos, modelo, formato versionado, ejecución paso a paso, pruebas y límites. El código se encuentra en la raíz del curso, no en un proyecto vacío dentro de esta carpeta.
+
+## Práctica reproducible
+
+Consulta [PRACTICA.md](PRACTICA.md) y contrasta tu resultado con [SOLUCIONES.md](SOLUCIONES.md).
+
 ---
 
 ## Continuar el curso
 
-- **Unidad anterior:** [Unidad 28 — Buenas prácticas y refactorización](../unidad28-buenas-practicas/README.md)
+- **Unidad anterior:** [Unidad 28: Buenas prácticas y refactorización](../unidad28-buenas-practicas/README.md)
 - **Volver al índice:** [Todas las unidades](../README.md)
-- **Siguiente unidad:** [Unidad 30 — Proyecto final](../unidad30-proyecto-final/README.md)
+- **Siguiente unidad:** [Unidad 30: Proyecto final](../unidad30-proyecto-final/README.md)
+

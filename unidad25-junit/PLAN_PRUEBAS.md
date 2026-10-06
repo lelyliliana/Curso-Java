@@ -12,3 +12,4 @@
 ¿Qué requisito o regla protege cada test?
 
 Un test sin propósito claro puede aumentar mantenimiento sin aumentar confianza.
+

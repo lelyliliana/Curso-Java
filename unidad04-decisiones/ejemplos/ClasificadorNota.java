@@ -1,6 +1,6 @@
 public class ClasificadorNota {
     static String clasificar(double nota) {
-        if (nota < 0 || nota > 5) {
+        if (!Double.isFinite(nota) || nota < 0 || nota > 5) {
             return "Inválida";
         }
         if (nota >= 4.5) {
@@ -18,3 +18,4 @@ public class ClasificadorNota {
         System.out.println(clasificar(2.9));
     }
 }
+

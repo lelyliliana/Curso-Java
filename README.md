@@ -1,16 +1,37 @@
 # Curso de Java desde cero
 
-**[Comenzar el curso: Unidad 00 — Entorno, JDK y primer programa](unidad00-entorno/README.md)**
+**[Comenzar el curso: Unidad 00: Entorno, JDK y primer programa](unidad00-entorno/README.md)**
 
 Puedes leer las lecciones aquí sin conocer GitHub. Al terminar cada unidad, usa **Siguiente unidad** para avanzar; **Unidad anterior** y **Volver al índice** te permiten regresar.
 
 [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
 
-**Versión 1.0**
+**Versión 1.1**
 
 Curso abierto para aprender **Java de forma progresiva**, desde la sintaxis fundamental y la programación orientada a objetos hasta colecciones, programación funcional, concurrencia, redes, pruebas y construcción de proyectos con Maven.
 
 Este curso está diseñado como un recurso independiente dentro de Aprende con Leli.
+
+## Comenzar paso a paso
+
+1. Sigue [ENTORNO.md](docs/ENTORNO.md) para seleccionar JDK y comprobarlo en tu sistema.
+2. Abre la Unidad 00 y ejecuta su laboratorio en su propia carpeta.
+3. Avanza con los enlaces anterior, índice y siguiente; cada unidad incluye práctica y soluciones.
+4. En la Unidad 24 instala/verifica Maven y ejecuta el proyecto mínimo completo.
+5. En las Unidades 25 y26 ejecuta pruebas con `mvn test` desde cada unidad.
+6. Construye el [inventario de referencia](docs/PROYECTO_INVENTARIO.md) y extiéndelo para tu proyecto final.
+
+Hay **27 laboratorios de terminal**, **tres proyectos de aprendizaje Maven** y un **proyecto final con pruebas, archivos y consola**. Los snippets conceptuales explican una operación; los archivos completos enlazados contienen lo necesario para ejecutar cada referencia.
+
+## Guías del curso
+
+- [Entorno para Ubuntu, Windows y macOS](docs/ENTORNO.md)
+- [Java actual y decisiones de compatibilidad](docs/JAVA_ACTUAL.md)
+- [Diagnóstico por capas](docs/DIAGNOSTICO_JAVA.md)
+- [Glosario](docs/GLOSARIO.md)
+- [Contratos y ejecución del proyecto final](docs/PROYECTO_INVENTARIO.md)
+- [Verificación reproducible](docs/VERIFICACION.md)
+- [Referencias oficiales](docs/REFERENCIAS.md)
 
 ## Requisito recomendado
 
@@ -44,50 +65,50 @@ Los ejemplos se orientan a **Java 21 LTS** y evitan depender innecesariamente de
 
 ## Ruta de aprendizaje
 
-### Nivel 1 — Fundamentos
-- [Unidad 00 — Entorno, JDK y primer programa](unidad00-entorno/)
-- [Unidad 01 — Cómo funciona Java: JDK, JVM y bytecode](unidad01-plataforma-java/)
-- [Unidad 02 — Variables, tipos y operadores](unidad02-datos-operadores/)
-- [Unidad 03 — Entrada, salida y conversiones](unidad03-entrada-salida/)
-- [Unidad 04 — Decisiones](unidad04-decisiones/)
-- [Unidad 05 — Ciclos](unidad05-ciclos/)
-- [Unidad 06 — Métodos y modularización](unidad06-metodos/)
+### Nivel 1: Fundamentos
+- [Unidad 00: Entorno, JDK y primer programa](unidad00-entorno/)
+- [Unidad 01: Cómo funciona Java: JDK, JVM y bytecode](unidad01-plataforma-java/)
+- [Unidad 02: Variables, tipos y operadores](unidad02-datos-operadores/)
+- [Unidad 03: Entrada, salida y conversiones](unidad03-entrada-salida/)
+- [Unidad 04: Decisiones](unidad04-decisiones/)
+- [Unidad 05: Ciclos](unidad05-ciclos/)
+- [Unidad 06: Métodos y modularización](unidad06-metodos/)
 
-### Nivel 2 — Programación orientada a objetos
-- [Unidad 07 — Clases y objetos](unidad07-clases-objetos/)
-- [Unidad 08 — Constructores, encapsulamiento y validación](unidad08-encapsulamiento/)
-- [Unidad 09 — Herencia y composición](unidad09-herencia-composicion/)
-- [Unidad 10 — Polimorfismo, clases abstractas e interfaces](unidad10-polimorfismo-interfaces/)
-- [Unidad 11 — Enumeraciones y records](unidad11-enum-records/)
+### Nivel 2: Programación orientada a objetos
+- [Unidad 07: Clases y objetos](unidad07-clases-objetos/)
+- [Unidad 08: Constructores, encapsulamiento y validación](unidad08-encapsulamiento/)
+- [Unidad 09: Herencia y composición](unidad09-herencia-composicion/)
+- [Unidad 10: Polimorfismo, clases abstractas e interfaces](unidad10-polimorfismo-interfaces/)
+- [Unidad 11: Enumeraciones y records](unidad11-enum-records/)
 
-### Nivel 3 — Java esencial
-- [Unidad 12 — Excepciones](unidad12-excepciones/)
-- [Unidad 13 — String y procesamiento de texto](unidad13-cadenas/)
-- [Unidad 14 — Fechas y tiempo](unidad14-fechas-tiempo/)
-- [Unidad 15 — Archivos y NIO](unidad15-archivos-nio/)
-- [Unidad 16 — Colecciones](unidad16-colecciones/)
-- [Unidad 17 — Genéricos](unidad17-genericos/)
+### Nivel 3: Java esencial
+- [Unidad 12: Excepciones](unidad12-excepciones/)
+- [Unidad 13: String y procesamiento de texto](unidad13-cadenas/)
+- [Unidad 14: Fechas y tiempo](unidad14-fechas-tiempo/)
+- [Unidad 15: Archivos y NIO](unidad15-archivos-nio/)
+- [Unidad 16: Colecciones](unidad16-colecciones/)
+- [Unidad 17: Genéricos](unidad17-genericos/)
 
-### Nivel 4 — Java moderno
-- [Unidad 18 — Lambdas e interfaces funcionales](unidad18-lambdas/)
-- [Unidad 19 — Stream API](unidad19-streams/)
-- [Unidad 20 — Optional y diseño con ausencia de valores](unidad20-optional/)
+### Nivel 4: Java moderno
+- [Unidad 18: Lambdas e interfaces funcionales](unidad18-lambdas/)
+- [Unidad 19: Stream API](unidad19-streams/)
+- [Unidad 20: Optional y diseño con ausencia de valores](unidad20-optional/)
 
-### Nivel 5 — Concurrencia y comunicación
-- [Unidad 21 — Threads y tareas](unidad21-threads/)
-- [Unidad 22 — Executors, futuros y sincronización](unidad22-concurrencia/)
-- [Unidad 23 — Redes con sockets](unidad23-redes/)
+### Nivel 5: Concurrencia y comunicación
+- [Unidad 21: Threads y tareas](unidad21-threads/)
+- [Unidad 22: Executors, futuros y sincronización](unidad22-concurrencia/)
+- [Unidad 23: Redes con sockets](unidad23-redes/)
 
-### Nivel 6 — Desarrollo profesional
-- [Unidad 24 — Maven y estructura de proyectos](unidad24-maven/)
-- [Unidad 25 — Pruebas con JUnit](unidad25-junit/)
-- [Unidad 26 — Mockito y pruebas de unidades con dependencias](unidad26-mockito/)
-- [Unidad 27 — Logging, depuración y manejo de configuración](unidad27-diagnostico/)
-- [Unidad 28 — Buenas prácticas y refactorización](unidad28-buenas-practicas/)
+### Nivel 6: Desarrollo profesional
+- [Unidad 24: Maven y estructura de proyectos](unidad24-maven/)
+- [Unidad 25: Pruebas con JUnit](unidad25-junit/)
+- [Unidad 26: Mockito y pruebas de unidades con dependencias](unidad26-mockito/)
+- [Unidad 27: Logging, depuración y manejo de configuración](unidad27-diagnostico/)
+- [Unidad 28: Buenas prácticas y refactorización](unidad28-buenas-practicas/)
 
-### Nivel 7 — Integración
-- [Unidad 29 — Taller de problemas Java](unidad29-taller/)
-- [Unidad 30 — Proyecto final](unidad30-proyecto-final/)
+### Nivel 7: Integración
+- [Unidad 29: Taller de problemas Java](unidad29-taller/)
+- [Unidad 30: Proyecto final](unidad30-proyecto-final/)
 
 ## Metodología
 
@@ -116,3 +137,4 @@ Este repositorio enseña **Java**. Frameworks y áreas especializadas se mantien
 **Leli Liliana Díaz Izquierdo**
 
 Ingeniera de Sistemas · Docente investigadora · Tecnología, educación e investigación.
+

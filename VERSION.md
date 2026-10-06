@@ -1,40 +1,11 @@
-# Versión 1.0
+# Versión 1.1
 
-Estado: **completa, autodidacta y disponible**.
+31 unidades, conservando orden y direcciones. La actualización añade 27 laboratorios independientes, proyectos Maven completos en las unidades24..26, prácticas y soluciones en todas las unidades, taller guiado e inventario final ejecutable.
 
-## Alcance
+Se usa release 21, Maven 3.9.16, JUnit Jupiter 6.1.3 y Mockito 5.24.0 con agente explícito. Se revisan formatos numéricos, NaN, dinero exacto, referencias, igualdad, records, zonas, archivos, concurrencia, cancelación y sockets locales.
 
-La versión 1.0 contiene:
+La verificación compila y ejecuta referencias, comprueba enlaces locales, ejecuta pruebas reales y simuladas, construye JAR y prueba persistencia entre procesos. La matriz de integración continua cubre Ubuntu, Windows y macOS con JDK 21 y25.
 
-- 31 unidades en siete niveles;
-- Java 21 como referencia;
-- plataforma Java, tipos, control de flujo y métodos;
-- programación orientada a objetos;
-- encapsulamiento, composición, herencia, polimorfismo e interfaces;
-- enums y records;
-- excepciones, cadenas, fechas y NIO;
-- colecciones y genéricos;
-- lambdas, Stream API y Optional;
-- threads, Executors y sincronización;
-- sockets TCP locales;
-- Maven;
-- JUnit y Mockito;
-- logging, depuración, configuración y refactorización;
-- ejemplos ejecutables;
-- ejercicios y retos;
-- taller integrador;
-- proyecto final;
-- plantilla, rúbrica y checklist;
-- guía de diagnóstico Java por capas.
+El inventario limita uso a una sesión local. Las pruebas no certifican ausencia de todos los defectos, durabilidad de disco ni funcionamiento multiusuario. Las garantías y límites se explican en la guía del proyecto.
 
-## Criterio de cierre
-
-El curso cubre el recorrido definido desde los fundamentos del lenguaje hasta prácticas profesionales de construcción, prueba y mantenimiento de aplicaciones Java.
-
-Los frameworks especializados permanecen fuera del alcance de este curso.
-
-Las correcciones posteriores se consideran mantenimiento de la versión publicada.
-
-## Experiencia de aprendizaje
-
-El curso puede recorrerse de forma autónoma desde la instalación y fundamentos del lenguaje hasta POO, biblioteca estándar, concurrencia, herramientas, pruebas y un proyecto reproducible. Las unidades priorizan explicación, práctica, diagnóstico, ejercicios, retos y decisiones técnicas justificadas.
+[Índice](README.md) · [Verificación](docs/VERIFICACION.md)

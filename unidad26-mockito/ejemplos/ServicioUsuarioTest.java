@@ -29,4 +29,18 @@ class ServicioUsuarioTest {
 
         assertEquals("Ana", servicio.obtenerNombre("1"));
     }
+    @Test
+    void ausenciaEsUnResultadoPrevisto() {
+        var repo = mock(RepositorioUsuario.class);
+        when(repo.buscarNombre("2")).thenReturn(Optional.empty());
+        assertEquals("No encontrado", new ServicioUsuario(repo).obtenerNombre("2"));
+        verify(repo).buscarNombre("2");
+    }
+
+    @Test
+    void falloNoSeConfundeConAusencia() {
+        var repo = mock(RepositorioUsuario.class);
+        when(repo.buscarNombre("2")).thenThrow(new IllegalStateException("Fallo simulado"));
+        assertThrows(IllegalStateException.class, () -> new ServicioUsuario(repo).obtenerNombre("2"));
+    }
 }

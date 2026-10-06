@@ -1,0 +1,41 @@
+name: Verificar curso Java
+on: [push, pull_request]
+jobs:
+  comprobar:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        java: ['21', '25']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: maven
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Maven fijado
+        shell: python
+        run: |
+          import hashlib, os, pathlib, shutil, tarfile, urllib.request
+          url = 'https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.16/apache-maven-3.9.16-bin.tar.gz'
+          archivo = pathlib.Path(os.environ['RUNNER_TEMP']) / 'maven.tar.gz'
+          urllib.request.urlretrieve(url, archivo)
+          esperado = urllib.request.urlopen(url + '.sha512').read().decode().split()[0]
+          assert hashlib.sha512(archivo.read_bytes()).hexdigest() == esperado
+          with tarfile.open(archivo) as paquete:
+              paquete.extractall(os.environ['RUNNER_TEMP'], filter='data')
+          binario = pathlib.Path(os.environ['RUNNER_TEMP']) / 'apache-maven-3.9.16' / 'bin'
+          with open(os.environ['GITHUB_PATH'], 'a') as salida:
+              salida.write(str(binario) + '\n')
+      - name: Comprobar versiones
+        run: |
+          java --version
+          javac --version
+          mvn --version
+      - name: Comprobar documentación, laboratorios, ejemplos y pruebas
+        run: python scripts/verificar.py

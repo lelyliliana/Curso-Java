@@ -22,3 +22,4 @@ public class CondicionCarrera {
         System.out.println("Obtenido: " + contador);
     }
 }
+

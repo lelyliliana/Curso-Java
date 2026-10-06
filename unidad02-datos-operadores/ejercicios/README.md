@@ -1,4 +1,4 @@
-# Ejercicios — Datos y operadores
+# Ejercicios: Datos y operadores
 
 1. Conversión de segundos.
 2. Área y perímetro.
@@ -9,3 +9,4 @@
 
 ## Reto
 Implementa un cálculo financiero sencillo y justifica el tipo elegido para cada variable. Investiga por qué `double` no es apropiado para todos los escenarios monetarios.
+

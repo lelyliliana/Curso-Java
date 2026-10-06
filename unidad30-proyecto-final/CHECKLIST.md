@@ -1,27 +1,17 @@
-# Checklist — Proyecto final Java
+# Comprobación final
 
-## Diseño
-- [ ] Modelo coherente.
-- [ ] Invariantes protegidas.
-- [ ] Responsabilidades claras.
-- [ ] No hay herencia artificial.
+- [ ] Definí alcance y cinco acciones con datos ficticios.
+- [ ] El constructor y las operaciones protegen invariantes.
+- [ ] Probé fronteras y estado conservado tras rechazos.
+- [ ] Distinguí identidad, igualdad y copias de colecciones.
+- [ ] Persistencia distingue ausencia de archivo corrupto.
+- [ ] Expliqué qué se conserva y qué puede fallar al guardar.
+- [ ] Pruebas ejecutan dominio y archivos reales.
+- [ ] Simulé un fallo relevante sin confundirlo con integración.
+- [ ] El proyecto Maven compila, prueba y produce un JAR ejecutable.
+- [ ] README funciona desde una carpeta con espacios.
+- [ ] No hay rutas personales, secretos ni datos reales innecesarios.
+- [ ] Mi extensión tiene contrato, casos y explicación.
+- [ ] Puedo justificar cada dependencia y limitación.
 
-## Código
-- [ ] Java 21.
-- [ ] Nombres claros.
-- [ ] Excepciones no se silencian.
-- [ ] Recursos se cierran.
-- [ ] Configuración no está hardcodeada innecesariamente.
-
-## Pruebas
-- [ ] Casos normales.
-- [ ] Límites.
-- [ ] Inválidos.
-- [ ] Reglas del dominio.
-- [ ] Dependencias aisladas solo cuando aporta valor.
-
-## Proyecto
-- [ ] mvn test funciona.
-- [ ] mvn package funciona.
-- [ ] README permite reproducir.
-- [ ] No contiene rutas personales ni secretos.
+[Proyecto](README.md)

@@ -10,14 +10,14 @@ public class Cuenta {
     }
 
     public void depositar(double valor) {
-        if (valor <= 0) {
+        if (!Double.isFinite(valor) || valor <= 0 || !Double.isFinite(saldo + valor)) {
             throw new IllegalArgumentException("Depósito inválido");
         }
         saldo += valor;
     }
 
     public void retirar(double valor) {
-        if (valor <= 0 || valor > saldo) {
+        if (!Double.isFinite(valor) || valor <= 0 || valor > saldo) {
             throw new IllegalArgumentException("Retiro inválido");
         }
         saldo -= valor;
@@ -29,5 +29,11 @@ public class Cuenta {
 
     public String getTitular() {
         return titular;
+    }
+    public static void main(String[] args) {
+        var cuenta = new Cuenta("Ana");
+        cuenta.depositar(10);
+        cuenta.retirar(4);
+        System.out.println(cuenta.getSaldo());
     }
 }

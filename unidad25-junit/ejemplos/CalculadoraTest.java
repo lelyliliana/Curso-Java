@@ -25,4 +25,10 @@ class CalculadoraTest {
         assertThrows(IllegalArgumentException.class,
                 () -> Calculadora.dividir(10, 0));
     }
+    @Test
+    void divisionEnteraTruncaHaciaCero() {
+        assertEquals(3, Calculadora.dividir(7, 2));
+        assertEquals(-3, Calculadora.dividir(-7, 2));
+        assertEquals(0, Calculadora.dividir(0, 2));
+    }
 }

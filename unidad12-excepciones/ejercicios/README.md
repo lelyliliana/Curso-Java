@@ -1,4 +1,4 @@
-# Ejercicios — Excepciones
+# Ejercicios: Excepciones
 1. Parseo seguro.
 2. División.
 3. Validación de dominio.
@@ -7,3 +7,4 @@
 
 ## Reto
 Importa registros donde algunas líneas sean inválidas; conserva válidas y produce reporte de errores.
+
