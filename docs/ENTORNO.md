@@ -106,6 +106,8 @@ En Ubuntu/macOS el ejecutable puede llamarse `python3`. En Windows puede ser `py
 
 Usa una terminal que represente UTF-8 y una fuente con los símbolos necesarios. `javac -encoding UTF-8` configura la lectura del fuente; no configura por sí mismo el aspecto de la consola. Windows Terminal con PowerShell actual permite trabajar cómodamente; en consolas antiguas puede ser necesario ajustar su página de códigos.
 
+Si rediriges una salida Java a otra herramienta que espera UTF-8, puedes ejecutar `java -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 Laboratorio`. Las opciones van antes del nombre de la clase. El script de verificación fija esa codificación para sus procesos; un programa ejecutado a mano debe coincidir con lo que espera su terminal o su consumidor.
+
 Las rutas relativas dependen del directorio de trabajo del proceso. El proyecto acepta una ruta opcional entre comillas:
 
 ```text

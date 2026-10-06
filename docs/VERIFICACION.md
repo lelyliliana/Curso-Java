@@ -14,6 +14,8 @@ python scripts/verificar.py
 
 En sistemas donde Python se llama python3 o py -3, sustituye solo ese lanzador. El script utiliza rutas compuestas, carpetas temporales con espacios y comandos sin shell específico.
 
+La verificación configura UTF-8 para la salida de Python y para los procesos Java que inicia, mediante file.encoding, stdout.encoding y stderr.encoding. La salida estándar de una JVM puede usar una codificación distinta de la de archivos, especialmente en Windows; indicar solamente `javac -encoding UTF-8` no la configura. Esta decisión permite comparar tildes y símbolos sin perder información. No modifica la configuración permanente de tu terminal.
+
 ## Qué se comprueba
 
 | Área | Comprobación |

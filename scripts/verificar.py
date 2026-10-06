@@ -14,8 +14,11 @@ COMPROBACIONES = 0
 
 
 def ejecutar(comando, cwd=RAIZ, entrada="", timeout=120):
+    entorno = os.environ.copy()
+    opciones = "-Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8"
+    entorno["JAVA_TOOL_OPTIONS"] = (entorno.get("JAVA_TOOL_OPTIONS", "") + " " + opciones).strip()
     resultado = subprocess.run(comando, cwd=cwd, input=entrada, text=True,
-                               encoding="utf-8", capture_output=True, timeout=timeout)
+                               encoding="utf-8", capture_output=True, timeout=timeout, env=entorno)
     if resultado.returncode:
         raise RuntimeError("Falló " + str(comando) + "\n" + resultado.stdout + resultado.stderr)
     return resultado.stdout.replace("\r\n", "\n").strip()
@@ -140,6 +143,8 @@ def verificar_maven(maven, java):
 
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
     herramientas = {nombre: shutil.which(nombre) for nombre in ("java", "javac", "mvn")}
     if not all(herramientas.values()):
         raise RuntimeError("Necesitas java, javac y mvn en PATH. Consulta docs/ENTORNO.md")

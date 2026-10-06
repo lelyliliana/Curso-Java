@@ -7,6 +7,7 @@ Las lecciones usan Java 21 como contrato de compilación, aunque los proveedores
 | Lenguaje, tipos y aprendizaje | [Dev.java](https://dev.java/learn/) |
 | Reglas precisas del lenguaje | [Java Language Specification 21](https://docs.oracle.com/javase/specs/jls/se21/html/index.html) |
 | Bibliotecas del JDK | [API Java SE 21](https://docs.oracle.com/en/java/javase/21/docs/api/index.html) |
+| Codificación de flujos estándar | [System y sus propiedades](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html) |
 | Importes y comparación decimal | [BigDecimal](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html) |
 | Records y mutabilidad superficial | [Record](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html) |
 | Hilos virtuales | [JEP 444](https://openjdk.org/jeps/444) |
