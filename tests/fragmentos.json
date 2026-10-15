@@ -1,0 +1,26 @@
+{
+  "unidad11-enum-records": {
+    "programa": "System.out.println(new Laboratorio.Lectura(20.5,Laboratorio.Estado.ACTIVO).valor());\ntry { new Laboratorio.Lectura(Double.NaN,Laboratorio.Estado.ACTIVO); } catch (IllegalArgumentException e) { System.out.println(\"NaN rechazado\"); }\ntry { new Laboratorio.Lectura(1,null); } catch (NullPointerException e) { System.out.println(\"Estado requerido\"); }",
+    "salida": "20.5\nNaN rechazado\nEstado requerido"
+  },
+  "unidad13-cadenas": {
+    "programa": "System.out.println(Laboratorio.contar(\" Sol LUNA sol \"));\nSystem.out.println(Laboratorio.contar(\" \"));",
+    "salida": "{sol=2, luna=1}\n{}"
+  },
+  "unidad15-archivos-nio": {
+    "programa": "var ruta=java.nio.file.Files.createTempFile(\"java fragmento \",\".txt\");\ntry { java.nio.file.Files.writeString(ruta,\"Sol\\n\\nLuna\\n\",java.nio.charset.StandardCharsets.UTF_8); System.out.println(Laboratorio.contar(ruta)); }\nfinally { java.nio.file.Files.deleteIfExists(ruta); }",
+    "salida": "2"
+  },
+  "unidad17-genericos": {
+    "programa": "System.out.println(Laboratorio.primero(java.util.List.of(\"Java\",\"SQL\")).orElse(\"Ausente\"));\nSystem.out.println(Laboratorio.primero(java.util.List.<String>of()).orElse(\"Ausente\"));",
+    "salida": "Java\nAusente"
+  },
+  "unidad20-optional": {
+    "programa": "var usuarios=java.util.Map.of(\"A\",new Laboratorio.Usuario(\" Ana@example.test \"),\"B\",new Laboratorio.Usuario(\" \"));\nSystem.out.println(Laboratorio.correo(usuarios,\"A\").orElse(\"Ausente\"));\nSystem.out.println(Laboratorio.correo(usuarios,\"B\").orElse(\"Ausente\"));\nSystem.out.println(Laboratorio.correo(usuarios,\"C\").orElse(\"Ausente\"));",
+    "salida": "Ana@example.test\nAusente\nAusente"
+  },
+  "unidad27-diagnostico": {
+    "programa": "System.clearProperty(\"curso.puerto\");System.out.println(Laboratorio.leerPuerto());\nSystem.setProperty(\"curso.puerto\",\"65535\");System.out.println(Laboratorio.leerPuerto());\nSystem.setProperty(\"curso.puerto\",\"1023\");try { Laboratorio.leerPuerto(); } catch (IllegalArgumentException e) { System.out.println(\"Puerto rechazado\"); }",
+    "salida": "8080\n65535\nPuerto rechazado"
+  }
+}

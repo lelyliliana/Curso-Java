@@ -17,18 +17,26 @@ Ejecuta ambos métodos con la misma lista. Caracteriza vacío y negativo antes d
 
 Escribe primero casos que fijan tasa, precisión, momento de redondeo y entradas rechazadas. Extrae cálculo puro del formato y la entrada. No cambies redondeo mientras presentas el cambio como simple refactorización.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Lista vacía:0; [100,200]:300; negativo:rechazo en ambos; suma desbordada:ArithmeticException en ambos.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La solución completa calcula base*(1+tasa) y aplica setScale(2,HALF_UP) al final en ambas versiones. 100 con 0.19 produce 119.00 y 0.05 con 0.10 produce 0.06. Base negativa y tasas fuera de 0..1 se rechazan en ambas. El laboratorio original sigue mostrando equivalencia de suma y detección de desbordamiento long.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)
+
+## Comparar las versiones ejecutables
+
+[Solucion.java](solucion/Solucion.java) contiene ambas versiones y casos de redondeo/rechazo. Desde la carpeta solucion, ejecuta por separado:
+
+```text
+javac -encoding UTF-8 --release 21 Solucion.java
+```
+
+```text
+java Solucion
+```

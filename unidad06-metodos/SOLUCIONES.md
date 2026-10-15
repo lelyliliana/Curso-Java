@@ -18,18 +18,16 @@ Dibuja dos variables apuntando al mismo arreglo. Identifica qué sentencia modif
 
 Crea un nuevo int[datos.length], recorre con índices y guarda datos[i] * 2. Devuelve la referencia nueva. Define límites de los enteros o usa Math.multiplyExact si el resultado debe rechazarse cuando se desborda.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 [2,3] devuelve [4,6] y original [2,3]; [] devuelve vacío distinto; dos invocaciones no comparten el arreglo resultado.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La solución devuelve un arreglo nuevo, usa Math.multiplyExact por elemento y no cambia datos. Vacío produce otro arreglo de longitud cero; null se rechaza. Integer.MAX_VALUE no puede duplicarse en int y lanza ArithmeticException. Si tu interpretación de duplicar era una copia sin transformar, declara ese contrato diferente antes de comparar resultados.
+
+La [implementación completa](solucion/Solucion.java) se compila de forma independiente; el [desarrollo](DESARROLLO.md) explica su recorrido y comandos.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

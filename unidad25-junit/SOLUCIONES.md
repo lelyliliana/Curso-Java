@@ -31,3 +31,9 @@ Las suites del proyecto final comprueban errores que importan más que una suma 
 Ejecuta `mvn test`. Un fallo muestra esperado, obtenido y ubicación; corrige la regla o la expectativa según el contrato, sin borrar la prueba para obtener BUILD SUCCESS.
 
 [Práctica](PRACTICA.md) · [Unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Los casos 7/2=3, -7/2=-3, 0/2=0 y divisor cero están implementados. La extensión de frontera comprueba MIN_VALUE/-1 con el resultado int ordinario. No cambies la expectativa a una excepción sin cambiar la API. Una prueba debe afirmar valor o error contratado; encontrar cualquier resultado sin error no demuestra una división correcta.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

@@ -20,18 +20,14 @@ Elige la estructura según la consulta, antes de escribir el bucle. Prueba un du
 
 Comprueba containsKey antes de put o usa putIfAbsent con una política de valores no nulos. Devuelve List.copyOf de los valores para evitar exponer la estructura mutable. Define orden de consulta mediante LinkedHashMap.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Dos códigos distintos:2; duplicado:error y primer dato intacto; vacío:listado vacío; consulta ausente no crea entrada.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Usa Map<String,Producto> y un método registrar que exija producto no nulo, compruebe containsKey(producto.codigo()) y lance IllegalArgumentException antes de put. Un duplicado conserva la primera referencia y el tamaño. El [Inventario real](../src/main/java/com/lelyliliana/inventario/Inventario.java) implementa esa secuencia y permite contrastarla con pruebas.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

@@ -24,7 +24,7 @@ public final class Main {
         salida.println("Inventario local (datos ficticios)");
         boolean continuar = true;
         while (continuar && entrada.hasNextLine()) {
-            salida.println("1 Registrar | 2 Listar | 3 Buscar | 4 Retirar | 5 Reporte | 6 Filtrar | 0 Salir");
+            salida.println("1 Registrar | 2 Listar | 3 Buscar | 4 Retirar | 5 Reporte | 6 Filtrar | 7 Añadir existencias | 8 Actualizar datos | 0 Salir");
             String opcion = entrada.nextLine().strip();
             try {
                 switch (opcion) {
@@ -49,6 +49,19 @@ public final class Main {
                     }
                     case "5" -> salida.println("Valor de existencias: " + servicio.valorTotal().toPlainString());
                     case "6" -> mostrar(salida, servicio.filtrar(leer(entrada, salida, "Texto:")));
+                    case "7" -> {
+                        String codigo = leer(entrada, salida, "Código:");
+                        int cantidad = Integer.parseInt(leer(entrada, salida, "Cantidad a añadir:"));
+                        servicio.agregar(codigo, cantidad);
+                        salida.println("Existencias añadidas y guardadas");
+                    }
+                    case "8" -> {
+                        String codigo = leer(entrada, salida, "Código:");
+                        String nombre = leer(entrada, salida, "Nombre nuevo:");
+                        BigDecimal precio = new BigDecimal(leer(entrada, salida, "Precio nuevo (punto decimal):"));
+                        servicio.actualizar(codigo, nombre, precio);
+                        salida.println("Datos actualizados y guardados");
+                    }
                     case "0" -> continuar = false;
                     default -> salida.println("Opción no válida");
                 }

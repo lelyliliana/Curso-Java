@@ -40,4 +40,17 @@ public final class ServicioInventario {
         almacen.guardar(candidato.listar());
         inventario = candidato;
     }
+    public void agregar(String codigo, int cantidad) throws IOException {
+        Inventario candidato = copiar();
+        candidato.agregar(codigo, cantidad);
+        almacen.guardar(candidato.listar());
+        inventario = candidato;
+    }
+
+    public void actualizar(String codigo, String nombre, java.math.BigDecimal precio) throws IOException {
+        Inventario candidato = copiar();
+        candidato.actualizar(codigo, nombre, precio);
+        almacen.guardar(candidato.listar());
+        inventario = candidato;
+    }
 }

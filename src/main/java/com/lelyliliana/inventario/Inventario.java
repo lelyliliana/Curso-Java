@@ -45,6 +45,18 @@ public final class Inventario {
         productos.put(codigo, nuevo);
     }
 
+    public void agregar(String codigo, int cantidad) {
+        Producto actual = buscar(codigo).orElseThrow(
+                () -> new IllegalArgumentException("No existe: " + codigo));
+        productos.put(codigo, actual.agregar(cantidad));
+    }
+
+    public void actualizar(String codigo, String nombre, BigDecimal precio) {
+        Producto actual = buscar(codigo).orElseThrow(
+                () -> new IllegalArgumentException("No existe: " + codigo));
+        productos.put(codigo, actual.actualizar(nombre, precio));
+    }
+
     public BigDecimal valorTotal() {
         return productos.values().stream().map(Producto::valorExistencias)
                 .reduce(new BigDecimal("0.00"), BigDecimal::add);

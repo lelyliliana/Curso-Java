@@ -17,18 +17,14 @@ Identifica clase, archivo, llaves y punto y coma. Compila sin ejecutar. Busca La
 
 Añade tres println dentro de main. Usa args.length para contar, sin intentar leer args[0] cuando la longitud sea cero. La salida debe conservar tres líneas de perfil independientemente de los argumentos.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Sin argumentos: 0. Con Ana Java: 2. Falta un punto y coma: error de compilación; no esperes que cambie un .class antiguo.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Dentro de main añade tres println para nombre, interés y objetivo ficticios; conserva args.length. Las ejecuciones sin argumentos y con Ana Java producen conteos 0 y 2. Con "Ana Pérez" entre comillas el conteo es 1. No necesitas Scanner: el contrato de esta actividad lee argumentos, no entrada interactiva.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

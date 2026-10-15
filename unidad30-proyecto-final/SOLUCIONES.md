@@ -28,3 +28,13 @@ Define Producto.actualizar(nombre,precio) que construye otra instantánea conser
 La suite comprueba reglas relevantes, no todas las entradas posibles ni todas las fallas de un disco. Un test de error simulado demuestra reacción del servicio al contrato de Almacen. Las pruebas con NIO demuestran ida y vuelta del formato y rechazo de archivos inválidos en entornos controlados.
 
 [Práctica](PRACTICA.md) · [Unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Producto.actualizar, Inventario.actualizar y ServicioInventario.actualizar resuelven la extensión, con opción 8 de consola. Los tests verifican que una escritura rechazada no confirma nombre ni precio, y que una actualización incompleta conserva el archivo. La ejecución del JAR en procesos separados comprueba recuperación real de los datos aceptados.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)
+
+## Ejecutar la ampliación integrada
+
+La referencia implementa actualizar en Producto, Inventario y ServicioInventario y lo ofrece como opción 8. Consulta [las pruebas completas](../src/test/java/com/lelyliliana/inventario/AmpliacionesInventarioTest.java).

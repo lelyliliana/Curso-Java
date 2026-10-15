@@ -31,4 +31,8 @@ class CalculadoraTest {
         assertEquals(-3, Calculadora.dividir(-7, 2));
         assertEquals(0, Calculadora.dividir(0, 2));
     }
+    @Test
+    void divisionExtremaConservaElContratoInt() {
+        assertEquals(Integer.MIN_VALUE, Calculadora.dividir(Integer.MIN_VALUE, -1));
+    }
 }

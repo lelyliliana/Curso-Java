@@ -16,18 +16,14 @@ Ejecuta primero el laboratorio correcto. Estudia CondicionCarrera.java como demo
 
 Encapsula un int y sincroniza tanto incremento como lectura pertinente. Inicia los dos hilos antes de hacer join. Comprueba 20000 y documenta que un microbenchmark improvisado incluye calentamiento y ruido del entorno.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Un hilo:10000; dos:20000; 0 iteraciones:0; volatile con ++ sigue sin garantizar conteo.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La clase resuelta puede tener `private int valor; synchronized void incrementar(){ valor++; } synchronized int valor(){ return valor; }`. Comparte una sola instancia, ejecuta 10000 incrementos por hilo y llama join en ambos antes de leer. El total es 20000. No concluyas superioridad universal de velocidad ni exijas que el ejemplo sin protección falle en cada ejecución.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

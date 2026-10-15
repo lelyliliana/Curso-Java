@@ -17,18 +17,14 @@ Identifica parámetros y valor devuelto. Cambia and por or y predice resultados.
 
 Combina dos Predicate<Producto>. Normaliza una vez el criterio y usa startsWith dentro de la condición. Mantén los predicates sin efectos laterales y devuelve una nueva lista.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Cumple ambas:incluido; solo stock:no incluido con and; lista vacía:vacía; original intacto.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Define Predicate<Producto> disponible = p -> p.stock()>0 y otro de nombre que compare prefijos normalizados con Locale.ROOT; combina mediante disponible.and(prefijo). Con C se acepta Cuaderno, no Cable ni Libro. El dominio Producto del inventario ya garantiza nombre no vacío. Esta selección no cambia stock y no equivale a búsqueda fonética.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

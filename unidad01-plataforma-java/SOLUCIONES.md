@@ -17,18 +17,14 @@ Compila. Cambia A por B sin compilar. Ejecuta el .class: todavía dice A. Recomp
 
 Registra la salida antes y después de recompilar. Añade javap -verbose para conocer major version. Evita usar la propiedad del sistema como si leyera metadatos del archivo: pertenece a la JVM activa.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Fuente B y bytecode A: A. Recompilado: B. JVM compatible: ejecuta; JVM 17 con clase release 21: UnsupportedClassVersionError.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Sin recompilar, se sigue mostrando versión A. Después de javac, aparece B. javap -verbose Laboratorio.class debe indicar major 65 con --release 21. La línea java.class.version puede reflejar otra versión si la JVM activa es posterior. No alteres esa propiedad para que parezca que inspeccionaste el archivo.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

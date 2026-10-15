@@ -18,18 +18,27 @@ Añade un elemento a la lista origen y observa el record. Intenta grupo.temas().
 
 Escribe un constructor compacto con Double.isFinite y Objects.requireNonNull. No reasignes campos con this: el constructor compacto asigna componentes al finalizar. Usa enum para estados cerrados, sin prometer que impedirá null por sí solo.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 25.0 válido; NaN/infinito rechazados; estado nulo rechazado; dos lecturas iguales tienen equals true.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Declara Lectura con constructor compacto: rechaza !Double.isFinite(valor) mediante IllegalArgumentException y exige estado con Objects.requireNonNull. Con 20.5 y ACTIVO se construye; NaN e infinitos no. Dos records con componentes equivalentes son iguales. Esta validación no establece que toda temperatura finita sea físicamente correcta: ese límite no forma parte de la práctica.
+
+## Implementación de la parte añadida
+
+Dentro de Laboratorio, junto al enum Estado de la referencia:
+
+```java
+record Lectura(double valor, Estado estado) {
+    Lectura {
+        if (!Double.isFinite(valor)) throw new IllegalArgumentException("Valor finito requerido");
+        java.util.Objects.requireNonNull(estado, "Estado requerido");
+    }
+}
+```
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

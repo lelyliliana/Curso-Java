@@ -17,18 +17,16 @@ Sigue el recorrido envío, lectura, respuesta y cierre. Identifica por qué el h
 
 Separa antes del primer |, exige ECHO y valida texto. Para un límite de recepción real implementa lector que cuenta antes de acumular; comprobar length después de readLine limita el dominio, pero no protege memoria frente a una línea enorme. Documenta esa diferencia.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 ECHO|hola:respuesta; comando otro:error; EOF antes del mensaje:error; falta terminador:timeout; Unicode conserva texto.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La solución devuelve OK|hola para ECHO|hola y ERROR|Comando desconocido para otra operación. La lectura admite 200 unidades contando el prefijo y rechaza la siguiente antes de ampliar el buffer. EOF sin LF lanza EOFException. La referencia TCP sigue probándose realmente; el archivo de solución prueba el lector y procesador con StringReader, sin presentarlos como un segundo servidor de red.
+
+La [implementación completa](solucion/Solucion.java) se compila de forma independiente; el [desarrollo](DESARROLLO.md) explica su recorrido y comandos.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

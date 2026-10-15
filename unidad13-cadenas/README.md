@@ -1,5 +1,7 @@
 # Unidad 13: String y procesamiento de texto
 
+**[Desarrollo del código y resolución paso a paso](DESARROLLO.md)**
+
 [Volver al índice del curso](../README.md) · [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
 
 ## Qué aprenderás

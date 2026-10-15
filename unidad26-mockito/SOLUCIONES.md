@@ -30,3 +30,9 @@ Una prueba con mock no verifica el formato del archivo ni el funcionamiento de u
 Ejecuta `mvn test` y revisa que las tres pruebas de la suite se hayan ejecutado. La configuración de agente permanece en el pom, no dentro de cada test.
 
 [Práctica](PRACTICA.md) · [Unidad](README.md)
+
+## Resolución concreta de la práctica
+
+when devuelve Optional.of("Ana") para presente, Optional.empty para ausencia y thenThrow para fallo. Las expectativas son Ana, No encontrado e IllegalStateException respectivamente. Verificar el código recibido aporta evidencia específica; no se configura una base de datos. La suite del inventario combina este enfoque con integración real de archivo y consola.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

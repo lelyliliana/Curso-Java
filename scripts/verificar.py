@@ -40,7 +40,7 @@ def verificar_documentacion():
             continue
         texto = archivo.read_text(encoding="utf-8")
         comprobar(len(re.findall(r"^# ", texto, re.M)) == 1, f"Encabezado principal: {archivo}")
-        comprobar(not re.search(r"TODO:|FIXME:|instrucciones internas del generador", texto),
+        comprobar(not re.search(r"TODO:|FIXME:|instrucciones internas del generador|\uFFFD|Ã[\x80-\xBF]|Â[\x80-\xBF]|[\uE200\uE201]|contentReference|oaicite", texto),
                   f"Contenido ajeno a la lección: {archivo}")
         for enlace in re.findall(r"\[[^\]]*\]\(([^)]+)\)", texto):
             if re.match(r"[a-z]+://", enlace) or enlace.startswith("#"):
@@ -50,7 +50,7 @@ def verificar_documentacion():
             referencias += 1
     for i, unidad in enumerate(unidades):
         texto = (unidad / "README.md").read_text(encoding="utf-8")
-        for nombre in ("PRACTICA.md", "SOLUCIONES.md"):
+        for nombre in ("PRACTICA.md", "SOLUCIONES.md", "DESARROLLO.md"):
             comprobar((unidad / nombre).is_file(), f"Falta {nombre} en {unidad}")
         if i:
             comprobar(f"../{unidades[i-1].name}/README.md" in texto, "Navegación anterior")
@@ -80,6 +80,39 @@ def verificar_laboratorios(java, javac):
                 obtenido = ejecutar([java, "-Dcurso.limite=0", "-cp", salida, "Laboratorio"])
                 comprobar("Configuración rechazada" in obtenido, "Validación de configuración")
     print(f"Laboratorios: {len(esperados)} compilados y ejecutados con salida comprobada", flush=True)
+
+
+def verificar_soluciones(java, javac):
+    esperados = json.loads((RAIZ / "tests/soluciones.json").read_text(encoding="utf-8"))
+    for carpeta, esperado in esperados.items():
+        fuente = RAIZ / carpeta / "solucion/Solucion.java"
+        with tempfile.TemporaryDirectory(prefix="java solucion ") as salida:
+            ejecutar([javac, "-encoding", "UTF-8", "--release", "21", "-d", salida, str(fuente)])
+            obtenido = ejecutar([java, "-cp", salida, "Solucion"], timeout=15)
+            comprobar(obtenido == esperado, f"Solución diferente en {carpeta}:\n{obtenido}")
+    print(f"Extensiones: {len(esperados)} compiladas y ejecutadas con casos normales, fronteras y rechazos", flush=True)
+
+
+def verificar_fragmentos(java, javac):
+    casos = json.loads((RAIZ / "tests/fragmentos.json").read_text(encoding="utf-8"))
+    for carpeta, caso in casos.items():
+        texto = (RAIZ / carpeta / "DESARROLLO.md").read_text(encoding="utf-8")
+        fragmentos = re.findall(r"```java\n([\s\S]*?)```", texto)
+        comprobar(len(fragmentos) == 1, f"Fragmento contextual único: {carpeta}")
+        original = (RAIZ / carpeta / "laboratorio/Laboratorio.java").read_text(encoding="utf-8")
+        corte = original.rfind("}")
+        fuente = original[:corte] + fragmentos[0] + "\n}\n"
+        with tempfile.TemporaryDirectory(prefix="java fragmento ") as directorio:
+            ruta = Path(directorio)
+            (ruta / "Laboratorio.java").write_text(fuente, encoding="utf-8")
+            (ruta / "Comprobar.java").write_text(
+                "public final class Comprobar { public static void main(String[] args) throws Exception {\n"
+                + caso["programa"] + "\n}}\n", encoding="utf-8")
+            ejecutar([javac, "-encoding", "UTF-8", "--release", "21", "-d", directorio,
+                      str(ruta / "Laboratorio.java"), str(ruta / "Comprobar.java")])
+            obtenido = ejecutar([java, "-cp", directorio, "Comprobar"], timeout=15)
+            comprobar(obtenido == caso["salida"], f"Fragmento con salida incorrecta: {carpeta}: {obtenido}")
+    print(f"Fragmentos de desarrollos: {len(casos)} compilados en su contexto y ejecutados", flush=True)
 
 
 def verificar_ejemplos(java, javac):
@@ -131,12 +164,17 @@ def verificar_maven(maven, java):
     comprobar(total > 0, "No se ejecutaron pruebas")
     with tempfile.TemporaryDirectory(prefix="java proyecto ") as directorio:
         archivo = Path(directorio) / "carpeta con espacios" / "inventario.txt"
-        jar = RAIZ / "target/curso-java-1.1.0.jar"
+        jar = RAIZ / "target/curso-java-1.2.0.jar"
         salida = ejecutar([java, "-jar", str(jar), str(archivo)],
                           entrada="1\nA\nCuaderno\n12.50\n3\n4\nA\n1\n5\n0\n")
         comprobar("Valor de existencias: 25.00" in salida, "Reporte de consola empaquetada")
         salida = ejecutar([java, "-jar", str(jar), str(archivo)], entrada="2\n0\n")
         comprobar("stock 2" in salida, "Persistencia entre procesos")
+        salida = ejecutar([java, "-jar", str(jar), str(archivo)],
+                          entrada="7\nA\n3\n8\nA\nLibro\n20.00\n5\n0\n")
+        comprobar("Valor de existencias: 100.00" in salida, "Ampliaciones en JAR")
+        salida = ejecutar([java, "-jar", str(jar), str(archivo)], entrada="2\n0\n")
+        comprobar("A | Libro | 20.00 | stock 5" in salida, "Ampliaciones persistidas entre procesos")
     salida = ejecutar([java, "-jar", str(proyectos[1] / "target/java-unidad24-1.1.0.jar")])
     comprobar(salida == "Hola, Java", "JAR del proyecto mínimo")
     print(f"JUnit/Mockito: {total} pruebas aprobadas; dos JAR ejecutables comprobados", flush=True)
@@ -150,6 +188,8 @@ def main():
         raise RuntimeError("Necesitas java, javac y mvn en PATH. Consulta docs/ENTORNO.md")
     verificar_documentacion()
     verificar_laboratorios(herramientas["java"], herramientas["javac"])
+    verificar_soluciones(herramientas["java"], herramientas["javac"])
+    verificar_fragmentos(herramientas["java"], herramientas["javac"])
     verificar_ejemplos(herramientas["java"], herramientas["javac"])
     verificar_maven(herramientas["mvn"], herramientas["java"])
     print(f"Verificación completa: {COMPROBACIONES} comprobaciones", flush=True)

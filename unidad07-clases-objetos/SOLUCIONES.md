@@ -18,18 +18,14 @@ Identifica constructor, campos, método de instancia y llamada. Cambia cantidad 
 
 Devuelve String nombre() desde un método de consulta. String es inmutable. Mantén los campos final y sin setters. Documenta que subtotal se expresa en centavos, no en unidades monetarias completas.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 3 × 1250: 3750 centavos; cantidad 0: rechazo; alias observa el mismo objeto; otra instancia no es idéntica.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Dentro de la clase anidada añade `String nombre() { return nombre; }`. Consulta antes y después de subtotal(3); debe conservar Cuaderno. subtotal(3) produce 3750 centavos y subtotal(1) produce 1250. No agregues un setter para demostrar una consulta. El método del laboratorio se llama subtotal; adaptar el nombre del enunciado no exige duplicar el cálculo.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

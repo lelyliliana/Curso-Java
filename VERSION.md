@@ -1,11 +1,17 @@
-# Versión 1.1
+# Versión 1.2
 
-31 unidades, conservando orden y direcciones. La actualización añade 27 laboratorios independientes, proyectos Maven completos en las unidades24..26, prácticas y soluciones en todas las unidades, taller guiado e inventario final ejecutable.
+Fecha: 2026-10-14 (America/Bogota).
 
-Se usa release 21, Maven 3.9.16, JUnit Jupiter 6.1.3 y Mockito 5.24.0 con agente explícito. Se revisan formatos numéricos, NaN, dinero exacto, referencias, igualdad, records, zonas, archivos, concurrencia, cancelación y sockets locales.
+Las 31 unidades incorporan desarrollos específicos que siguen código real, explican decisiones y resuelven contrastes. Las soluciones añaden respuestas concretas; trece extensiones incluyen programa completo independiente, salidas de casos normales/fronteras/rechazos y verificación automática.
 
-La verificación compila y ejecuta referencias, comprueba enlaces locales, ejecuta pruebas reales y simuladas, construye JAR y prueba persistencia entre procesos. La matriz de integración continua cubre Ubuntu, Windows y macOS con JDK 21 y25.
+El inventario añade existencias y actualiza nombre/precio mediante nuevas instantáneas, candidato, guardado y confirmación. La consola ofrece opciones 7 y 8. Las pruebas incluyen conservación del estado si guardar falla, datos inválidos sin escritura, EOF y recuperación desde archivo. El formato persistente INVENTARIO|1 permanece compatible porque no cambian sus campos.
 
-El inventario limita uso a una sesión local. Las pruebas no certifican ausencia de todos los defectos, durabilidad de disco ni funcionamiento multiusuario. Las garantías y límites se explican en la guía del proyecto.
+La unidad Maven extrae Saludo con pruebas y conserva el lanzador. JUnit incorpora la frontera de división int extrema. La actividad de impuesto define de manera explícita tasa, dominio y redondeo para evaluar la refactorización.
 
-[Índice](README.md) · [Verificación](docs/VERIFICACION.md)
+Se mantienen Java 21 como objetivo y las versiones fijadas de Maven/JUnit/Mockito. El artefacto raíz es curso-java-1.2.0.jar; los proyectos de aprendizaje conservan sus versiones independientes. La verificación añade presencia de desarrollos, detección de marcas de codificación dañada y ejecución aislada de las trece soluciones.
+
+[Recorrido guiado](docs/RECORRIDO_GUIADO.md) · [Verificación](docs/VERIFICACION.md)
+
+## Base 1.1
+
+27 laboratorios, tres proyectos Maven de aprendizaje, inventario con pruebas y persistencia local. La integración continua mantiene su matriz de sistemas y JDK. Las garantías se limitan a una sesión local y no prometen coordinación entre procesos ni durabilidad ante fallos físicos.

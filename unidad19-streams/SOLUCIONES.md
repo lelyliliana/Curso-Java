@@ -18,18 +18,16 @@ Identifica fuente, transformación y terminal. Compara total con el bucle. Prueb
 
 Agrupa primero. Ordena las entradas por valor descendente y luego clave ascendente; aplica limit(3) y toList. No ordenes ventas individuales si el requisito exige comparar totales agregados.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Categorías repetidas:suman; empate:orden de nombres; menos de tres:devuelve las existentes; vacío:lista vacía.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La solución agrupa en un mapa con merge y Math.addExact, convierte entradas a Total, ordena por importe descendente y nombre ascendente, y aplica limit(3). Devuelve A=60,B=60,C=5. Vacío produce lista vacía y una suma fuera de long se rechaza. El desempate no depende del orden accidental del mapa.
+
+La [implementación completa](solucion/Solucion.java) se compila de forma independiente; el [desarrollo](DESARROLLO.md) explica su recorrido y comandos.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

@@ -2,7 +2,7 @@
 
 ## Problema y alcance
 
-Gestiona un catálogo ficticio en una sesión de consola: registrar, listar, buscar, retirar stock, filtrar y calcular valor de existencias. Carga al iniciar y guarda después de cada cambio válido. La aplicación usa JDK, sin servidor externo ni base de datos.
+Gestiona un catálogo ficticio en una sesión de consola: registrar, listar, buscar, retirar o añadir stock, actualizar nombre/precio, filtrar y calcular valor de existencias. Carga al iniciar y guarda después de cada cambio válido. La aplicación usa JDK, sin servidor externo ni base de datos.
 
 ## Ejecutar paso a paso
 
@@ -10,13 +10,19 @@ Desde la raíz:
 
 1. `mvn test` comprueba reglas, archivos, servicio y consola.
 2. `mvn package` construye el JAR ejecutable.
-3. `java -jar target/curso-java-1.1.0.jar` abre el menú.
+3. `java -jar target/curso-java-1.2.0.jar` abre el menú.
 4. Elige 1 y escribe A-1, Cuaderno, 12.50 y 3 en líneas diferentes.
 5. Elige 5: valor de existencias 37.50.
 6. Elige 4, código A-1 y cantidad 1: confirma retiro guardado.
 7. Elige 0, vuelve a abrir y elige 2: stock 2.
 
 No pegues preguntas o números del enunciado junto con los valores. La aplicación consume una línea por campo. Los espacios que rodean una entrada se recortan.
+
+## Probar las ampliaciones
+
+Después de registrar A-1 con stock 3, elige 7, escribe A-1 y 2 en líneas distintas. El listado debe mostrar stock 5. Luego elige 8 y escribe A-1, Libro y 20.00 en líneas distintas. El reporte debe ser 100.00, con el mismo código y stock 5. Cierra y abre el JAR para comprobar recuperación del dato confirmado.
+
+Una cantidad cero, un exceso del stock máximo o un precio 1.001 se rechazan. Un fallo de guardado conserva la memoria anterior. EOF antes de completar la opción 8 descarta el comando sin escribir.
 
 ## Contratos exactos
 
@@ -28,6 +34,8 @@ No pegues preguntas o números del enunciado junto con los valores. La aplicaci�
 | Stock | int, 0..1000000 | Se rechaza fuera del rango |
 | Catálogo | Hasta1000 productos | No registra el producto 1001 |
 | Retiro | Cantidad >0 y <=stock | Estado anterior intacto si se rechaza |
+| Añadir stock (opción 7) | Cantidad positiva; stock final <=1000000 | Rechazo conserva estado y no escribe |
+| Actualizar datos (opción 8) | Código existente; nuevo nombre/precio válidos; conserva código y stock | Guarda antes de confirmar en memoria |
 | Búsqueda única | Código exacto | Optional vacío si no existe |
 | Filtro | Subcadena en nombre o código, ignorando mayúsculas con ROOT | Lista vacía; tildes se conservan |
 | Listado | Orden de inserción, instantánea no modificable | No expone Map mutable |

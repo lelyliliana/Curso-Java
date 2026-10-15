@@ -6,7 +6,7 @@ Puedes leer las lecciones aquí sin conocer GitHub. Al terminar cada unidad, usa
 
 [Ver el curso en Aprende con Leli](https://lelyliliana.github.io/aprende-con-leli/cursos/java/)
 
-**Versión 1.1**
+**Versión 1.2**
 
 Curso abierto para aprender **Java de forma progresiva**, desde la sintaxis fundamental y la programación orientada a objetos hasta colecciones, programación funcional, concurrencia, redes, pruebas y construcción de proyectos con Maven.
 
@@ -18,10 +18,16 @@ Este curso está diseñado como un recurso independiente dentro de Aprende con L
 2. Abre la Unidad 00 y ejecuta su laboratorio en su propia carpeta.
 3. Avanza con los enlaces anterior, índice y siguiente; cada unidad incluye práctica y soluciones.
 4. En la Unidad 24 instala/verifica Maven y ejecuta el proyecto mínimo completo.
-5. En las Unidades 25 y26 ejecuta pruebas con `mvn test` desde cada unidad.
+5. En las Unidades 25 y 26 ejecuta pruebas con `mvn test` desde cada unidad.
 6. Construye el [inventario de referencia](docs/PROYECTO_INVENTARIO.md) y extiéndelo para tu proyecto final.
 
 Hay **27 laboratorios de terminal**, **tres proyectos de aprendizaje Maven** y un **proyecto final con pruebas, archivos y consola**. Los snippets conceptuales explican una operación; los archivos completos enlazados contienen lo necesario para ejecutar cada referencia.
+
+## Construcción y soluciones paso a paso
+
+Las 31 unidades incluyen un desarrollo que sigue los archivos reales, explica decisiones y propone contrastes concretos. Trece extensiones tienen un Solucion.java completo que se compila de forma independiente. El inventario integra además añadir existencias y actualizar nombre/precio con validación y confirmación después del guardado.
+
+Consulta el [recorrido guiado y el índice de soluciones ejecutables](docs/RECORRIDO_GUIADO.md).
 
 ## Guías del curso
 

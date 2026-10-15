@@ -1,0 +1,15 @@
+{
+  "unidad02-datos-operadores": "0 -> 0:00:00\n59 -> 0:00:59\n60 -> 0:01:00\n3599 -> 0:59:59\n3600 -> 1:00:00\n7385 -> 2:03:05\nSegundos no negativos",
+  "unidad04-decisiones": "17.99 -> Frío\n18.0 -> Templado\n30.0 -> Templado\n30.01 -> Caliente\nNaN -> Temperatura finita requerida\nInfinity -> Temperatura finita requerida",
+  "unidad05-ciclos": "28 / 35\n-8 / -2\n7 / 7\nSin observaciones",
+  "unidad06-metodos": "Original: [3, -2, 0]\nCopia modificada: [100, -4, 0]\nVacío: 0\nDesbordamiento rechazado",
+  "unidad08-encapsulamiento": "5.75 / 4.25\nRechazada: 5.75 / 4.25\nDestino inválido\nRetiro exacto: 0.00 / 10.00",
+  "unidad09-herencia-composicion": "Eléctrica lista; vehículo listo\nCombustión lista; vehículo listo",
+  "unidad10-polimorfismo-interfaces": "Consola: [Curso] Listo\nConsola: [Curso] [Curso] Listo",
+  "unidad12-excepciones": "[10, 25]\nSin resultado parcial: Línea 2: entero inválido\nVacío: []",
+  "unidad14-fechas-tiempo": "Vence: 2026-01-08\n2026-01-08: false\n2026-01-09: true\nBisiesto: 2024-03-03",
+  "unidad19-streams": "A=60\nB=60\nC=5\nVacío: 0\nSuma desbordada rechazada",
+  "unidad22-concurrencia": "Tiempo agotado; la tarea sigue pendiente\nCancelación aceptada: true\nResultado cancelado\nTarea terminó: true",
+  "unidad23-redes": "OK|hola\nERROR|Comando desconocido\nFrontera: 200\nMensaje demasiado largo\nMensaje sin terminador LF",
+  "unidad28-buenas-practicas": "0.00 / 0.00 iguales=true\n119.00 / 119.00 iguales=true\n0.06 / 0.06 iguales=true\nVersión 0: rechazo\nVersión 1: rechazo\nVersión 0: rechazo\nVersión 1: rechazo"
+}

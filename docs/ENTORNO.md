@@ -87,7 +87,7 @@ Vuelve a la raíz del curso y ejecuta, en orden:
 ```text
 mvn test
 mvn package
-java -jar target/curso-java-1.1.0.jar
+java -jar target/curso-java-1.2.0.jar
 ```
 
 La primera construcción requiere Internet para resolver bibliotecas. La aplicación final funciona localmente sin Internet. El JAR contiene las clases del inventario y un manifiesto ejecutable; las dependencias declaradas tienen scope test y no se necesitan para ejecutar la consola.
@@ -111,7 +111,7 @@ Si rediriges una salida Java a otra herramienta que espera UTF-8, puedes ejecuta
 Las rutas relativas dependen del directorio de trabajo del proceso. El proyecto acepta una ruta opcional entre comillas:
 
 ```text
-java -jar target/curso-java-1.1.0.jar "datos-locales/carpeta con espacios/inventario.txt"
+java -jar target/curso-java-1.2.0.jar "datos-locales/carpeta con espacios/inventario.txt"
 ```
 
 No uses rutas personales en el código. VS Code o IntelliJ pueden abrir la raíz como proyecto Maven, pero verifica el JDK seleccionado en el IDE. Un botón Run no demuestra qué JVM ni qué directorio está usando.

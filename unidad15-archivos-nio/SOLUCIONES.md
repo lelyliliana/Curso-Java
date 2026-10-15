@@ -17,18 +17,26 @@ Identifica creación, escritura, lectura y limpieza. Comprueba que el archivo te
 
 Comprueba args.length y usa Path.of(args[0]). Abre Files.lines(ruta, UTF_8) en try-with-resources, filtra !isBlank y count. Informa IOException conservando causa si relanzas. No captures excepción para devolver cero: cero líneas y fallo de lectura son resultados distintos.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Archivo vacío:0; dos líneas útiles:2; ruta inexistente:error; tildes preservadas; recurso cerrado incluso ante fallo.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Exige exactamente una ruta en args; construye Path.of(args[0]). Dentro de try(var lineas=Files.lines(ruta,StandardCharsets.UTF_8)) devuelve lineas.filter(s -> !s.isBlank()).count(). No llames toList antes de count. El archivo vacío produce cero; el inexistente genera un error, no un conteo exitoso de cero.
+
+## Implementación de la parte añadida
+
+Método dentro de Laboratorio; main debe exigir un argumento y llamar contar(Path.of(args[0])):
+
+```java
+static long contar(Path ruta) throws IOException {
+    try (var lineas = Files.lines(ruta, StandardCharsets.UTF_8)) {
+        return lineas.filter(s -> !s.isBlank()).count();
+    }
+}
+```
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

@@ -21,18 +21,16 @@ Traza i, condición y suma en cada vuelta. Distingue datos.length de un método 
 
 Si length == 0 informa Sin datos y termina antes de acceder a datos[0]. Inicializa mínimo y máximo con el primer elemento y recorre los demás. Para promedio amplía suma a double antes de dividir; para grandes sumas usa long o detecta desbordamiento.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 [5]: min=max=5; [-3,-8]: min=-8,max=-3; []: sin datos; última posición válida: length-1.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La solución produce 28/35 para la referencia, -8/-2 para negativos y 7/7 para un elemento. El vacío no tiene extremos y devuelve ausencia. No utiliza 0 como mínimo o máximo artificial. Objects.requireNonNull mantiene distinto el fallo de contrato de una ausencia válida de observaciones.
+
+La [implementación completa](solucion/Solucion.java) se compila de forma independiente; el [desarrollo](DESARROLLO.md) explica su recorrido y comandos.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

@@ -10,6 +10,7 @@ Las lecciones usan Java 21 como contrato de compilación, aunque los proveedores
 | Codificación de flujos estándar | [System y sus propiedades](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/System.html) |
 | Importes y comparación decimal | [BigDecimal](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html) |
 | Records y mutabilidad superficial | [Record](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html) |
+| Futuro, plazo y cancelación | [Future](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/Future.html), [ExecutorService](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/ExecutorService.html) |
 | Hilos virtuales | [JEP 444](https://openjdk.org/jeps/444) |
 | Fases y dependencias | [Maven Getting Started](https://maven.apache.org/guides/getting-started/) |
 | Compilación release | [Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) |

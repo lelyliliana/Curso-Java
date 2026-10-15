@@ -2,7 +2,7 @@
 
 ## Objetivo y contrato
 
-Refactoriza un cálculo con impuesto conservando regla de redondeo y excepciones.
+Refactoriza un cálculo con impuesto: base decimal no negativa, tasa entre 0 y 1, total base*(1+tasa) y redondeo HALF_UP a dos decimales al final. Conserva resultados y excepciones.
 
 ## Antes de programar
 
@@ -16,13 +16,15 @@ Ejecuta el laboratorio sin cambios y registra únicamente lo necesario para just
 
 ## Paso 2. Implementación
 
-Refactoriza un cálculo con impuesto conservando regla de redondeo y excepciones.
+Refactoriza un cálculo con impuesto: base decimal no negativa, tasa entre 0 y 1, total base*(1+tasa) y redondeo HALF_UP a dos decimales al final. Conserva resultados y excepciones.
 
 Mantén el contrato visible cerca del método o en el README de tu solución. Si eliges una política diferente, explica qué entrada cambia y por qué.
 
 ## Paso 3. Comprobación
 
-Lista vacía:0; [100,200]:300; negativo:rechazo en ambos; suma desbordada:ArithmeticException en ambos.
+Para la suma del laboratorio: lista vacía produce 0; [100,200] produce 300; negativo y desbordamiento se rechazan en ambas versiones.
+
+Para la extensión del impuesto: 0 con 0.19 produce 0.00; 100 con 0.19 produce 119.00; 0.05 con 0.10 produce 0.06. Base negativa o tasa fuera de 0..1 se rechazan en ambas versiones.
 
 Añade al menos un caso que distinga una solución correcta de un error frecuente de esta unidad. Una salida coincidente para el caso habitual no es suficiente si el ejercicio incluye fronteras o fallos.
 

@@ -19,18 +19,28 @@ Consulta código existente y ausente. Predice si se imprime Se calculó alternat
 
 Encadena buscar, map al correo, filter para no vacío y map para normalizar. Si buscar devuelve otro Optional, usa flatMap para evitar Optional<Optional<String>>. Define correo inválido por separado si requiere validación real.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Usuario ausente:empty; correo vacío:empty; correo válido:presente; fallo de repositorio:propaga error según contrato.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Encadena Optional.ofNullable(usuarios.get(codigo)).map(Usuario::correo).map(String::strip).filter(s -> !s.isEmpty()). El resultado solo contiene correo de un usuario encontrado con texto no vacío. Si el contrato pide minúsculas, añade map con Locale.ROOT y documenta esa política. No se realiza validación sintáctica completa de correo ni se capturan indiscriminadamente excepciones como ausencia.
+
+## Implementación de la parte añadida
+
+Declaraciones dentro de Laboratorio; los correos null o vacíos representan ausencia:
+
+```java
+record Usuario(String correo) {}
+static Optional<String> correo(Map<String,Usuario> usuarios, String codigo) {
+    Objects.requireNonNull(usuarios);
+    Objects.requireNonNull(codigo);
+    return Optional.ofNullable(usuarios.get(codigo))
+        .map(Usuario::correo).map(String::strip).filter(s -> !s.isEmpty());
+}
+```
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

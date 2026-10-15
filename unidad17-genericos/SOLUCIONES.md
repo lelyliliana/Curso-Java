@@ -17,18 +17,25 @@ Copia a List<Number> y a List<Object>. Intenta asignar directamente origen a Lis
 
 Devuelve Optional.empty si isEmpty y Optional.of(datos.getFirst()) en otro caso, con contrato de elementos no nulos. Si se permite null, decide si representa ausencia o error. El tipo T evita casts del llamador.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 List<String> devuelve Optional<String>; vacía:empty; [7]:Optional[7]; destino no modificable:UnsupportedOperationException.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La función completa es static <T> Optional<T> primero(List<T> datos): exige lista no nula, devuelve Optional.empty si está vacía y Optional.of(datos.getFirst()) si tiene un primer elemento no nulo. Con [Java,SQL] devuelve Java y con [2,3] devuelve 2 conservando tipos. No uses raw types ni un retorno Object que obligue al llamador a adivinar el tipo.
+
+## Implementación de la parte añadida
+
+Método estático dentro de Laboratorio, con los imports java.util de la referencia:
+
+```java
+static <T> Optional<T> primero(List<T> datos) {
+    Objects.requireNonNull(datos);
+    return datos.isEmpty() ? Optional.empty() : Optional.of(datos.getFirst());
+}
+```
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

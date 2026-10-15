@@ -35,3 +35,13 @@ Añade Producto.agregar(int cantidad). Valida cantidad positiva, suma con Math.a
 Pruebas mínimas: stock 0 +1 =1; stock 999999 +1 =1000000; stock 1000000 +1 rechazado; cantidad 0 rechazada; fallo al guardar conserva stock. No se necesita un framework nuevo para esta extensión.
 
 [Práctica](PRACTICA.md) · [Unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La ampliación está implementada en Producto.agregar, Inventario.agregar y ServicioInventario.agregar; Main la ofrece en opción 7. Las pruebas de AmpliacionesInventarioTest cubren fronteras, cantidades extremas, error sin escritura y fallo de guardado. El servicio solo confirma candidato después de almacenar. No requiere modificar el formato versionado porque los campos persistidos permanecen iguales.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)
+
+## Ejecutar la ampliación integrada
+
+La extensión está implementada en Producto.agregar, Inventario.agregar y ServicioInventario.agregar, con opción 7 de consola. Consulta [las pruebas completas](../src/test/java/com/lelyliliana/inventario/AmpliacionesInventarioTest.java).

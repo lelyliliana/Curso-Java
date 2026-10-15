@@ -16,18 +16,14 @@ Escribe los tres campos en líneas distintas. Repite con abc como cantidad y con
 
 Valida nombre.strip().length() entre 1 y 40 y solo después convierte los números. Mantén lectura completa por líneas. No reemplaces cualquier coma automáticamente si no has definido si representa decimal o separador de miles.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 2 × 12.50: 25.00; abc: formato inválido; -2: fuera del dominio; fin de entrada: mensaje y salida sin stack trace.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+Después de leer el nombre añade una condición nombre.isEmpty() || nombre.length()>40 que informe rechazo y termine. Muestra Nombre confirmado: seguido del nombre aceptado antes del cálculo. Conserva los hasNextLine y la validación de cantidad/precio. Con Cuaderno,2,12.50 el total es 25.00. Un nombre de 41 unidades no debe calcular una factura válida.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

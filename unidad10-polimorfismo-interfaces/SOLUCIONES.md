@@ -17,18 +17,16 @@ Recorre la lista usando la interfaz. Añade otra implementación y confirma que 
 
 Recibe el colaborador en un constructor y en enviar delega enviando "[Curso] " + mensaje. La clase compone la interfaz, por lo que puede decorar cualquiera de sus implementaciones sin repetirlas.
 
-No reemplaces una regla por un resultado fijo. El objetivo es que el programa cumpla el contrato con otras entradas válidas y rechace los errores indicados.
-
 ## Casos de aceptación
 
 Consola decorada: Consola: [Curso] Listo; simulado decorado: Simulado: [Curso] Listo; colaborador nulo rechazado.
 
-Verifica tanto el valor como el estado posterior cuando hay cambios. Si una excepción es parte del contrato, documenta su tipo y el punto donde se origina; si es un error de entrada recuperable, explica qué muestra el programa y cómo termina o continúa.
-
-## Cómo revisar tu explicación
-
-Puedes justificar tu respuesta si distingues entrada, transformación y resultado sin depender del nombre de una herramienta. Una alternativa es válida cuando preserva el contrato y puedes explicar su costo y límites.
-
-Vuelve a ejecutar el laboratorio original para confirmar que tu extensión no alteró el ejemplo de referencia.
-
 [Volver a la práctica](PRACTICA.md) · [Volver a la unidad](README.md)
+
+## Resolución concreta de la práctica
+
+La solución implementa NotificadorPrefijo con un destino no nulo y devuelve destino.enviar("[Curso] "+mensaje). Una capa produce Consola: [Curso] Listo y dos capas repiten [Curso]. No se modifica Consola para que reconozca todos los decoradores ni se antepone el prefijo después de enviar.
+
+La [implementación completa](solucion/Solucion.java) se compila de forma independiente; el [desarrollo](DESARROLLO.md) explica su recorrido y comandos.
+
+[Seguir el desarrollo del código](DESARROLLO.md) · [Volver a la práctica](PRACTICA.md)

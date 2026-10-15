@@ -47,6 +47,17 @@ public record Producto(String codigo, String nombre, BigDecimal precio, int stoc
         return new Producto(codigo, nombre, precio, stock - cantidad);
     }
 
+    public Producto agregar(int cantidad) {
+        if (cantidad <= 0 || cantidad > 1000000 - stock) {
+            throw new IllegalArgumentException("Cantidad positiva sin superar stock 1000000");
+        }
+        return new Producto(codigo, nombre, precio, Math.addExact(stock, cantidad));
+    }
+
+    public Producto actualizar(String nombreNuevo, BigDecimal precioNuevo) {
+        return new Producto(codigo, nombreNuevo, precioNuevo, stock);
+    }
+
     public BigDecimal valorExistencias() {
         return precio.multiply(BigDecimal.valueOf(stock));
     }
